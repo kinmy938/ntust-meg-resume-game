@@ -1,0 +1,1819 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<title>陳玉君の迷你簡歷遊戲｜kinmy's Resume Game</title>
+<style>
+:root{--ink:#26384c;--muted:#708195;--paper:#fff;--line:#d7e4ed;--blue:#6ea8db;--blue-dark:#456c90;--blue-soft:#eef7fd;--teal:#7ec7b0;--pink:#eeb6c8;--yellow:#efd266;--orange:#f2a45d;--cream:#fff9f1;--shadow:0 18px 44px rgba(62,86,108,.11);--shadow2:0 8px 22px rgba(62,86,108,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 16% 0%,rgba(177,220,245,.35),transparent 31%),radial-gradient(circle at 88% 5%,rgba(249,234,198,.34),transparent 23%),linear-gradient(#f8fbfd,#eef4f8)}button,a{font:inherit}.site{max-width:1000px;margin:auto;padding:10px 14px 44px}.hero{text-align:center;margin-bottom:9px}.eyebrow{font-size:11px;letter-spacing:.18em;color:#7891a6;font-weight:900}.hero h1{margin:4px 0 3px;font-size:clamp(27px,3.4vw,38px);color:#2d5677;line-height:1.1}.hero p{margin:0;color:var(--muted);font-size:13px}.portal{background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}.portal-head{min-height:46px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 14px;border-bottom:1px solid var(--line);background:linear-gradient(#fff,#fbfdff)}.portal-brand{display:flex;align-items:center;gap:10px;color:#537594;font-weight:900;font-size:13px}.brand-dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#ffd08f);box-shadow:0 0 0 4px rgba(242,164,93,.14)}.top-actions{display:flex;gap:7px;flex-wrap:wrap}.chip-btn{border:1px solid var(--line);background:#fff;color:#55748f;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;cursor:pointer}.game-wrap{position:relative;overflow:hidden;background:#dff3ff;touch-action:none}.game-wrap canvas{display:block;width:100%;height:auto;aspect-ratio:16/9}.hud{position:absolute;left:12px;right:12px;top:10px;display:flex;justify-content:space-between;gap:8px;pointer-events:none;z-index:5}.hud-pill{background:rgba(255,255,255,.93);border:1px solid rgba(70,107,134,.13);padding:9px 14px;border-radius:999px;color:#4d708d;font-size:12px;font-weight:900;box-shadow:0 7px 18px rgba(64,87,108,.08);backdrop-filter:blur(7px)}.toast{position:absolute;left:50%;top:60px;transform:translateX(-50%);background:rgba(36,57,75,.92);color:#fff;padding:8px 14px;border-radius:999px;font-size:12px;opacity:0;transition:.2s;pointer-events:none;z-index:8}.toast.show{opacity:1}.scaffold-btn{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:9;border:1px solid #e4c38f;background:rgba(255,249,238,.97);color:#765f3f;border-radius:999px;padding:9px 14px;font-size:12px;font-weight:900;box-shadow:0 8px 20px rgba(87,71,49,.12);cursor:pointer}.scaffold-btn[hidden]{display:none}.scaffold-btn:hover{background:#fff4df}.control-hint{position:absolute;right:14px;bottom:14px;max-width:480px;background:rgba(255,255,255,.91);border:1px solid rgba(75,109,134,.14);border-radius:14px;padding:9px 11px;color:#5d7991;font-size:11px;font-weight:800;box-shadow:var(--shadow2);backdrop-filter:blur(7px);z-index:5}.mission-card{position:absolute;left:26px;top:72px;width:min(440px,48%);padding:22px 26px 20px 34px;background:linear-gradient(145deg,rgba(255,252,244,.985),rgba(255,247,232,.97));border:2px solid #d8a964;border-radius:24px;box-shadow:0 12px 28px rgba(87,67,38,.15),inset 0 0 0 4px rgba(255,255,255,.58);pointer-events:none;z-index:4}.mission-card:before{content:"";position:absolute;left:15px;top:18px;bottom:18px;width:6px;border-radius:6px;background:linear-gradient(#f2a45d,#ffc46f)}.mission-card:after{content:"✦";position:absolute;right:18px;top:13px;color:#e8a244;font-size:22px;text-shadow:0 2px 8px rgba(232,162,68,.22)}.mission-card .lab{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;background:#5f88a8;color:#fff;font-size:12px;font-weight:900;letter-spacing:.04em;box-shadow:0 4px 10px rgba(70,105,132,.15)}.mission-card .main{font-size:27px;font-weight:950;color:#315d7d;line-height:1.25;margin-top:11px}.mission-card .sub{margin-top:7px;color:#677d90;font-size:13px;line-height:1.55}.poster-dom{position:absolute;right:30px;top:72px;width:122px;height:132px;padding:6px;background:#fff;border:1px solid #d6e1e8;border-radius:15px;box-shadow:0 10px 25px rgba(68,89,108,.12);pointer-events:auto;cursor:zoom-in;z-index:6}.poster-dom img{display:block;width:100%;height:100%;object-fit:contain;border-radius:10px;background:#fff}.ally-pill{position:absolute;right:26px;top:72px;max-width:300px;background:linear-gradient(145deg,rgba(255,252,244,.97),rgba(255,247,232,.95));border:1.5px solid #e3bd82;border-radius:18px;padding:9px 13px;color:#57728a;font-size:11.5px;font-weight:900;box-shadow:0 9px 22px rgba(82,67,45,.13);z-index:4;pointer-events:none}.ally-pill[hidden],.mission-card[hidden],.poster-dom[hidden]{display:none}.dialog{min-height:74px;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:12px;align-items:center;padding:8px 14px;border-top:1px solid rgba(226,188,120,.9);background:linear-gradient(180deg,rgba(20,27,36,.97),rgba(10,15,22,.985));box-shadow:inset 0 1px 0 rgba(255,255,255,.05);color:#fff}.dialog[hidden]{display:none!important}.face{width:52px;height:52px;border-radius:9px;overflow:hidden;background:#f3f6f8;border:1.5px solid #c7a76d;box-shadow:0 0 0 1px rgba(0,0,0,.35)}.face canvas{width:100%;height:100%}.dname{font-size:12.5px;font-weight:900;color:#f0c976;margin-bottom:3px;letter-spacing:.035em}.dtext{font-size:14px;line-height:1.5;color:#fff}.dialog .primary{background:#f3f3f3;color:#263849;box-shadow:none;border:1px solid rgba(255,255,255,.24);padding:7px 11px}.primary{border:0;border-radius:12px;background:linear-gradient(#648aac,#547c9e);color:#fff;font-weight:900;padding:8px 12px;cursor:pointer;box-shadow:0 6px 16px rgba(79,113,141,.18)}.primary[hidden]{display:none}.control-strip{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;padding:6px 12px 9px;background:#fbfdff}.control-pill{border:1px solid var(--line);background:#fff;color:#5b7790;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900}.info{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:29px;box-shadow:var(--shadow2)}.info-head{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}.info-head h2{margin:0;font-size:29px;color:#315979}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{background:var(--blue-soft);color:#567792;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900}.info-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:30px;margin-top:24px}.info h3{margin:0 0 10px;color:#39617f;font-size:18px}.info p,.info li{font-size:14px;line-height:1.85;color:#526577}.manual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0 22px}.manual-card{border:1px solid var(--line);background:linear-gradient(#fff,#fbfdff);border-radius:16px;padding:12px}.manual-card b{display:block;color:#426b89;margin-bottom:4px}.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:10px}.step{border:1px solid var(--line);background:#fbfdff;border-radius:18px;padding:14px}.step-num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#eaf4fb;color:#3f6888;font-size:13px;font-weight:900;margin-bottom:9px}.step b{display:block;color:#406886;margin-bottom:4px}.char-list{display:grid;gap:10px}.char{display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:center;border:1px solid var(--line);background:#fbfdff;border-radius:16px;padding:10px}.char-art{width:58px;height:58px;border-radius:50%;overflow:hidden;border:1px solid var(--line);background:linear-gradient(#eff7fc,#e8f1f7)}.char-art canvas{width:100%;height:100%}.char b{display:block;color:#416987;margin-bottom:3px}.char small{color:#708195;line-height:1.65}.note{margin-top:18px;padding:14px 16px;border-radius:16px;border:1px solid #efdfc7;background:var(--cream);color:#695b45;font-size:13px;line-height:1.75}.design-card{margin-top:16px;border:1px solid var(--line);border-radius:18px;padding:14px 16px;background:linear-gradient(#fff,#fbfdff);font-size:13px;line-height:1.75;color:#526577}.design-card b{color:#3f6888}.overlay{position:fixed;inset:0;background:rgba(30,49,64,.63);display:none;align-items:center;justify-content:center;padding:18px;z-index:60}.overlay.show{display:flex}.modal{width:min(790px,100%);max-height:88vh;overflow:auto;background:#fff;border-radius:24px;padding:24px;box-shadow:0 24px 64px rgba(0,0,0,.2)}.modal h2{margin:0 0 10px;color:#335d7d}.modal p{font-size:14px;line-height:1.8;color:#556879}.choice-board{display:grid;gap:10px;margin-top:14px}.sort-card,.deadline-card{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;border:1px solid var(--line);background:#fbfdff;border-radius:16px;padding:12px}.sort-num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#eaf4fb;color:#3f6888;font-weight:950}.sort-card b,.deadline-card b{color:#426a88}.sort-card small,.deadline-card small{color:#738598;line-height:1.55}.sort-actions{display:flex;gap:5px}.sort-actions button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:#fff;color:#55728a;font-weight:900;cursor:pointer}.skill-box{margin-top:15px;padding:15px;border:1px dashed #e0ba84;background:#fff9ee;border-radius:16px;color:#6c5a43;line-height:1.7}.skill-box b{color:#805f36}.deadline-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}.deadline-card{display:block;text-align:left;cursor:pointer;min-height:110px}.deadline-card.selected{border-color:var(--orange);background:#fff3e6}.deadline-card .emoji{font-size:25px;margin-bottom:7px}.deadline-card .order{float:right;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#567d9e;color:#fff;font-size:12px;font-weight:900}.feedback-list{display:grid;gap:8px;margin-top:14px}.feedback-item{padding:10px 12px;border-radius:12px;background:#f7fafc;border:1px solid var(--line);font-size:13px;line-height:1.6;color:#53687a}.team-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}.team-card{border:2px solid var(--line);background:#fff;border-radius:18px;padding:10px;text-align:center;cursor:pointer;transition:.15s}.team-card:hover{transform:translateY(-1px)}.team-card.selected{border-color:var(--orange);background:#fff3e6}.team-art{width:76px;height:76px;border-radius:50%;overflow:hidden;margin:0 auto 8px;background:#eef7fd;border:1px solid var(--line)}.team-art canvas{width:100%;height:100%}.team-card strong{display:block;color:#406886;font-size:13px}.team-card small{font-size:11px;color:var(--muted)}.actions-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.secondary{border:1px solid var(--line);border-radius:14px;background:#fff;color:#55728a;font-weight:900;padding:10px 14px;text-decoration:none}.endbox{background:#f8fbfd;border:1px solid var(--line);border-radius:18px;padding:16px;color:#4e6274;line-height:1.8;font-size:14px}.future-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:12px}.future-chip{padding:10px;border-radius:13px;background:#eef7fd;color:#4f708b;text-align:center;font-size:12px;font-weight:900}.mini-note{padding:10px 12px;border-radius:12px;background:#fff9ee;border:1px solid #efdfc7;color:#6b5a44;font-size:12px;line-height:1.65;margin-top:12px}
+#sortOverlay{background:rgba(42,58,67,.38);backdrop-filter:blur(5px)}
+.sort-modal{width:min(820px,100%);background:linear-gradient(180deg,#fffdf7,#fff8ea);border:2px solid #e2bd80;box-shadow:0 22px 60px rgba(46,67,84,.22),inset 0 0 0 4px rgba(255,255,255,.6);border-radius:30px;padding:26px 28px 24px;position:relative;overflow:auto}
+.sort-modal:before,.sort-modal:after{content:'✦';position:absolute;color:#e9a64b;font-size:22px;text-shadow:0 2px 8px rgba(232,162,68,.18)}.sort-modal:before{right:24px;top:18px}.sort-modal:after{left:22px;bottom:20px;font-size:16px}
+.sort-kicker{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#5f88a8;color:#fff;font-size:11px;font-weight:950;letter-spacing:.08em;box-shadow:0 4px 10px rgba(70,105,132,.15);margin-bottom:10px}.sort-modal h2{font-size:27px;color:#315d7d;margin:0 0 8px}.sort-intro{margin:0;color:#647c90;line-height:1.7}.sort-helper{margin-top:3px;color:#8b7b68;font-size:12px}
+.sort-partner{display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:center;margin-top:16px;padding:10px 13px;border-radius:17px;background:linear-gradient(145deg,#fff7e8,#fffaf1);border:1px solid #edcf9d}.sort-partner-face{width:56px;height:56px;border-radius:14px;overflow:hidden;background:#eef7fd;border:1.5px solid #d6b57c}.sort-partner-face canvas{width:100%;height:100%}.sort-partner b{display:block;color:#7b5d36;font-size:13px;margin-bottom:2px}.sort-partner p{margin:0!important;color:#6d6253!important;font-size:12.5px!important;line-height:1.55!important}
+.sort-modal .choice-board{gap:11px;margin-top:16px}.sort-modal .sort-card{grid-template-columns:42px minmax(0,1fr) auto;border:1.5px solid #d5e4ec;background:rgba(255,255,255,.86);border-radius:18px;padding:12px 13px;transition:transform .18s ease,border-color .18s ease,background .18s ease}.sort-modal .sort-card.priority{border-color:#efa957;background:#fff3df;box-shadow:0 6px 16px rgba(216,151,75,.13)}.sort-modal .sort-num{background:#e9f3fa;color:#3f6888}.sort-modal .sort-card.priority .sort-num{background:#f2a45d;color:#fff}.sort-titleline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.sort-icon{font-size:21px;line-height:1}.sort-modal .sort-card b{color:#3f6582;font-size:15px}.sort-modal .sort-card small{display:block;margin-top:4px;color:#718496;line-height:1.55}.priority-tag{padding:3px 8px;border-radius:999px;background:#f2a45d;color:#fff;font-size:10px;font-weight:900}.sort-modal .sort-actions button{border-radius:12px;border:1px solid #ccdce6;background:#fffdf8;color:#55728a}.sort-modal .sort-actions button:not(:disabled):hover{background:#eef7fd;border-color:#a9c7d9}.sort-modal .sort-actions button:disabled{opacity:.28;cursor:not-allowed}.sort-modal .actions-row{margin-top:16px}.sort-modal .primary{padding:10px 17px;border-radius:14px;background:linear-gradient(#648aac,#547c9e)}.sort-modal .skill-box{border:1px solid #e5c38c;background:#fff8eb;border-radius:17px;color:#665843}
+
+@media(max-width:880px){.info-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.control-hint{max-width:80%}.deadline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mission-card{width:54%}.ally-pill{right:18px;max-width:34%;font-size:10.5px}}@media(max-width:580px){.site{padding:8px 7px 36px}.hero{margin-bottom:7px}.hero p{font-size:12px}.portal-head{align-items:flex-start;min-height:44px}.dialog{grid-template-columns:48px 1fr;gap:8px;min-height:68px;padding:8px 10px}.face{width:46px;height:46px;border-radius:14px}.dtext{font-size:12px;line-height:1.5}.primary{grid-column:2;justify-self:start}.manual,.steps{grid-template-columns:1fr}.info{padding:20px}.control-hint{right:8px;bottom:8px;font-size:10px}.mission-card{left:12px;top:60px;width:62%;padding:12px 13px 11px 20px}.mission-card .main{font-size:18px}.mission-card .sub{font-size:11px}.poster-dom{right:12px;top:60px;width:86px;height:98px}.ally-pill{right:12px;left:auto;top:188px;max-width:48%;font-size:10px;padding:7px 9px}.control-strip{padding:5px 7px 7px}.control-pill{font-size:10px;padding:4px 7px}.deadline-grid{grid-template-columns:1fr}.future-grid{grid-template-columns:1fr}.sort-modal{padding:20px 15px 18px;border-radius:22px}.sort-modal h2{font-size:22px}.sort-partner{grid-template-columns:48px 1fr}.sort-partner-face{width:46px;height:46px}.sort-modal .sort-card{grid-template-columns:34px minmax(0,1fr) auto;padding:10px}.sort-icon{font-size:18px}.priority-tag{display:none}}
+
+.evidence-chip{border-color:#ebc58f;background:#fff9ef;color:#7a603e}.evidence-chip.complete{background:#fff1d9;border-color:#e7b66f}.evidence-pop{position:absolute;left:16px;bottom:16px;width:min(360px,58%);z-index:12;border:1px solid #e7c28c;background:rgba(255,250,240,.97);border-radius:16px;padding:12px 14px;box-shadow:0 14px 34px rgba(80,65,46,.17);pointer-events:none;animation:evidenceIn .24s ease-out}.evidence-pop[hidden]{display:none}.ep-kicker{font-size:10px;font-weight:950;letter-spacing:.14em;color:#b17734;margin-bottom:3px}.evidence-pop b{display:block;color:#59472f;font-size:14px;margin-bottom:4px}.evidence-pop span{display:block;color:#75634e;font-size:12px;line-height:1.55}@keyframes evidenceIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.resume-route{margin-top:14px;border:1px solid #ead8b9;background:#fffbf3;border-radius:16px;padding:13px 15px}.resume-route b{display:block;color:#765b37;margin-bottom:4px}.resume-route span{display:block;color:#416987;font-weight:900;margin-bottom:4px}.resume-route small{color:#6c7a86;line-height:1.6}.resume-modal{width:min(760px,100%)}.resume-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.resume-kicker{font-size:11px;letter-spacing:.16em;font-weight:950;color:#a97b43;margin-bottom:4px}.close-x{border:1px solid var(--line);background:#fff;width:38px;height:38px;border-radius:12px;font-size:24px;line-height:1;color:#668096;cursor:pointer}.resume-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.evidence-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:#f8fbfd;min-height:170px;position:relative}.evidence-card.locked{filter:grayscale(.7);opacity:.57}.evidence-card .num{font-size:11px;font-weight:950;letter-spacing:.1em;color:#8aa0b0}.evidence-card h3{margin:8px 0 7px;font-size:17px;color:#3f6888}.evidence-card p{margin:0;color:#657788;font-size:13px;line-height:1.65}.evidence-card .proof{margin-top:10px;padding-top:10px;border-top:1px dashed #d7e4ed;font-size:12px;color:#6e5a3d;line-height:1.55}.evidence-card .locktag{position:absolute;right:12px;top:12px;border-radius:999px;padding:4px 7px;font-size:10px;font-weight:950;background:#edf2f5;color:#8797a4}.evidence-card.unlocked{background:#fffaf2;border-color:#e6c28f}.evidence-card.unlocked .locktag{background:#f5dfb7;color:#765a35}.resume-foot{margin-top:16px;padding:12px 14px;border-radius:14px;background:#f2f7fa;color:#586d7e;font-size:13px}.resume-foot b{color:#3f6888}@media(max-width:700px){.resume-evidence-grid{grid-template-columns:1fr}.evidence-pop{width:72%;left:10px;bottom:10px}.top-actions{gap:5px}.chip-btn{padding:7px 9px}}
+.ending-proof{margin:13px 0 2px;padding:13px 14px;border-radius:14px;background:#fff8eb;border:1px solid #ead1a9;color:#66553f;line-height:1.7}.ending-proof b{color:#705634}
+/* v9 UX refinement */
+.game-wrap{isolation:isolate}
+.mission-card{left:22px;top:76px;width:min(320px,36%);padding:15px 17px 14px 23px;border-radius:17px;box-shadow:0 10px 24px rgba(66,91,111,.08)}
+.mission-card .main{font-size:22px}.mission-card .sub{font-size:12px;margin-top:5px}.mission-card .lab{font-size:11px}
+.poster-dom{right:24px;top:70px;width:104px;height:113px;padding:5px;pointer-events:auto;cursor:zoom-in;transition:transform .16s ease,box-shadow .16s ease}
+.poster-dom:hover{transform:scale(1.035);box-shadow:0 14px 30px rgba(68,89,108,.17)}
+.poster-dom:after{content:'🔍';position:absolute;right:5px;bottom:5px;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.94);font-size:12px;box-shadow:0 3px 9px rgba(40,60,75,.15)}
+.ally-pill{left:22px;top:184px;max-width:440px}
+.dialog{position:absolute;left:50%;top:56px;transform:translateX(-50%);width:min(650px,calc(100% - 210px));min-height:64px;display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center;padding:9px 12px;border:1px solid #cbdce7;border-radius:17px;background:rgba(255,255,255,.97);box-shadow:0 16px 38px rgba(50,75,94,.17);z-index:24;animation:dialogPop .18s ease-out}
+.dialog[hidden]{display:none}.dialog .face{width:46px;height:46px;border-radius:14px}.dialog .dname{font-size:11px}.dialog .dtext{font-size:13px;line-height:1.45}.dialog:after{content:'';position:absolute;left:50%;bottom:-8px;width:14px;height:14px;background:#fff;border-right:1px solid #cbdce7;border-bottom:1px solid #cbdce7;transform:translateX(-50%) rotate(45deg)}
+@keyframes dialogPop{from{opacity:0;transform:translate(-50%,-7px)}to{opacity:1;transform:translate(-50%,0)}}
+.toast{top:auto;bottom:72px}.evidence-pop{display:none!important}
+.poster-modal{width:min(520px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:hidden!important;text-align:center;padding:16px 18px 18px;display:flex;flex-direction:column}.poster-modal .resume-head{flex:0 0 auto;margin-bottom:8px}.poster-modal .resume-head h2{margin:0;font-size:20px}.poster-zoom{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100vh - 118px);object-fit:contain;margin:0 auto;border-radius:14px;box-shadow:0 12px 30px rgba(31,48,63,.16);background:#fff}.poster-tip{display:none}
+@media(max-width:700px){.dialog{top:54px;width:calc(100% - 28px);grid-template-columns:42px 1fr;}.dialog .face{width:40px;height:40px}.dialog .primary{grid-column:1/-1;justify-self:end}.mission-card{width:58%;}.ally-pill{top:190px;max-width:62%;font-size:11px}.poster-dom{width:86px;height:94px;right:15px}}
+
+/* v14: simplified page header + dedicated intro card */
+.site{padding-top:14px}
+.portal-brand-stack{display:flex;align-items:center;gap:10px;line-height:1.15}
+.portal-brand-stack>div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.portal-brand-stack b{font-size:14px;color:#355f7f;white-space:nowrap}
+.portal-brand-stack small{font-size:10px;font-weight:700;color:#7c91a3;letter-spacing:.03em}
+.portal-head{min-height:54px;padding:7px 14px}
+.top-actions{flex-wrap:nowrap}
+#resumeBtn{display:none!important}
+.intro-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(244,249,252,.36);z-index:28;backdrop-filter:blur(1.5px)}
+.intro-overlay[hidden]{display:none}
+.intro-card{width:min(610px,calc(100% - 24px));background:rgba(255,255,255,.98);border:1px solid #dbe7ef;border-radius:22px;box-shadow:0 18px 42px rgba(54,86,108,.16);padding:24px 30px 22px;text-align:center}
+.intro-kicker{font-size:10px;letter-spacing:.16em;color:#8397aa;font-weight:900;margin-bottom:8px}
+.intro-card h2{font-size:25px;color:#295779;margin:0 0 10px;line-height:1.25}
+.intro-note{display:inline-block;padding:6px 12px;border-radius:999px;background:#fff8ee;border:1px solid #f3d3aa;color:#9b6b37;font-size:11px;font-weight:900;margin-bottom:14px}
+.intro-card p{font-size:13px;line-height:1.9;color:#607d95;margin:0 auto 18px;max-width:560px}
+.intro-card .primary{min-width:118px}
+@media(max-width:680px){.portal-head{align-items:flex-start}.top-actions{gap:5px}.chip-btn{padding:7px 9px;font-size:11px}.portal-brand-stack b{font-size:12px}.portal-brand-stack small{font-size:9px}.intro-card{padding:20px 18px}.intro-card h2{font-size:21px}}
+
+
+.end-modal-v27{width:min(900px,100%)}
+.radar-intro{margin:-2px 0 14px;color:#64798b!important;text-align:center}
+.radar-layout{display:grid;grid-template-columns:minmax(300px,.9fr) minmax(300px,1.1fr);gap:18px;align-items:center}
+.radar-panel{min-height:310px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#fbfdff,#f7fbfd);padding:8px;display:grid;place-items:center}
+.radar-panel svg{width:100%;height:auto;display:block;max-width:390px}
+.radar-note{margin-top:12px;padding:12px 14px;border-radius:14px;background:#fff8ed;border:1px solid #efd9b8;color:#6d604f;font-size:13px;line-height:1.7}
+.clue-card-label{font-weight:900}
+@media(max-width:720px){.radar-layout{grid-template-columns:1fr}.radar-panel{min-height:260px}}
+
+
+/* V35 | unified fairy-tale quest decision boards */
+.quest-overlay{background:rgba(37,52,60,.42);backdrop-filter:blur(6px);overflow-y:auto;scrollbar-width:none}
+.quest-overlay::-webkit-scrollbar{display:none}
+.quest-modal{width:min(900px,calc(100% - 28px));max-height:none!important;overflow:visible!important;background:linear-gradient(180deg,#fffdf6 0%,#fff7e9 100%);border:2px solid #d9aa68;border-radius:30px;padding:22px 26px 20px;position:relative;box-shadow:0 24px 70px rgba(38,57,71,.24),inset 0 0 0 4px rgba(255,255,255,.72)}
+.quest-modal:before{content:'';position:absolute;inset:8px;border:1px solid rgba(99,145,175,.24);border-radius:23px;pointer-events:none}
+.quest-ribbon{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:linear-gradient(180deg,#6f99b8,#557f9f);color:#fff;font-size:12px;font-weight:950;letter-spacing:.06em;box-shadow:0 4px 12px rgba(69,105,132,.16);position:relative;z-index:1}
+.quest-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-top:8px;position:relative;z-index:1}.quest-head h2{font-size:26px!important;line-height:1.25;margin:0 0 6px!important;color:#315c7b!important}.quest-head p{margin:0!important;color:#667c8d!important;line-height:1.6!important;font-size:13.5px!important}.quest-spark{color:#e9a34a;font-size:28px;line-height:1;margin:2px 5px 0 0;text-shadow:0 3px 12px rgba(232,158,69,.22)}
+.quest-primary{background:linear-gradient(180deg,#6b94b5,#4f789a)!important;border:1px solid #47708f!important;border-radius:15px!important;padding:10px 18px!important;box-shadow:0 7px 16px rgba(67,107,137,.18)!important}.quest-primary:disabled{opacity:.42;box-shadow:none!important;cursor:not-allowed}
+.sort-modal{width:min(860px,calc(100% - 28px));padding:20px 24px 18px!important;overflow:visible!important}.sort-kicker{display:none}.sort-modal:before,.sort-modal:after{content:none}.sort-modal .sort-partner{margin-top:12px;padding:8px 12px;border-radius:16px;background:linear-gradient(145deg,#fff8e9,#fffdf6);border:1px solid #e8c58f}.sort-modal .sort-partner-face{width:50px;height:50px}.sort-modal .sort-partner{grid-template-columns:52px 1fr}.sort-modal .choice-board{gap:8px;margin-top:12px}.sort-modal .sort-card{min-height:62px;padding:9px 12px;border-radius:17px}.sort-modal .sort-card b{font-size:14px}.sort-modal .sort-card small{font-size:12px;margin-top:2px}.sort-modal .sort-num{width:32px;height:32px}.sort-modal .sort-actions button{width:34px;height:34px}.sort-modal .actions-row{margin-top:12px}.sort-modal .skill-box{margin-top:12px;padding:14px 16px;line-height:1.65}.sort-helper{font-size:11.5px;margin-top:2px}.priority-tag{font-size:9px}
+.deadline-modal{width:min(900px,calc(100% - 28px));padding:20px 24px 18px!important}.deadline-intro b{color:#426b86}.deadline-modal .deadline-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}.deadline-modal .deadline-card{min-height:104px;padding:12px 13px;border:1.5px solid #d7e5ed;background:rgba(255,255,255,.86);border-radius:18px;box-shadow:none;transition:transform .16s ease,border-color .16s ease,background .16s ease}.deadline-modal .deadline-card:hover{transform:translateY(-1px);border-color:#bdced9}.deadline-modal .deadline-card.selected{border-color:#eea454;background:#fff1db;box-shadow:0 7px 16px rgba(216,151,75,.12)}.deadline-modal .deadline-card:disabled{opacity:.5;cursor:not-allowed}.deadline-modal .deadline-card b{font-size:14px;display:block;margin-bottom:3px;color:#3f6582}.deadline-modal .deadline-card small{font-size:11.5px;line-height:1.48;display:block;color:#718496}.deadline-modal .deadline-card .emoji{font-size:23px;margin-bottom:4px}.deadline-modal .deadline-card .order{width:24px;height:24px}.deadline-modal .feedback-list{margin-top:9px}.deadline-modal .feedback-item.compact-summary{padding:9px 12px;border-radius:13px;background:#fff8e9;border:1px solid #e8c58f;color:#6b5b46}.deadline-modal .feedback-item.compact-summary span{color:#8b7a65}.deadline-actions{margin-top:10px}
+@media(max-width:720px){.quest-overlay{align-items:flex-start;padding:10px}.quest-modal,.sort-modal,.deadline-modal{width:100%;padding:16px 14px!important;border-radius:22px}.quest-head h2{font-size:21px!important}.deadline-modal .deadline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sort-modal .sort-card{grid-template-columns:34px minmax(0,1fr) auto}.sort-modal .sort-partner{grid-template-columns:46px 1fr}.sort-modal .sort-partner-face{width:44px;height:44px}}
+</style>
+
+<style id="v13-patch">
+.hero .subtitle-en{font-size:15px;font-weight:800;color:#69839a;margin-top:3px}
+.hero .fiction-note{font-size:11px;color:#91a0ae;margin-top:5px}
+.bgm-credit{margin-top:14px;padding:12px 14px;border:1px dashed #d7e4ed;border-radius:15px;background:#fbfdff;color:#667e93;font-size:12px;line-height:1.65}
+.bgm-credit a{color:#456c90;font-weight:800;text-decoration:none}
+.bgm-credit a:hover{text-decoration:underline}
+.music-loading{opacity:.72}
+
+/* v19: RPG dialogue panel - fixed below the game canvas, never overlays the scene */
+.dialog{
+  position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+  transform:none!important;width:100%!important;min-height:86px!important;box-sizing:border-box;
+  display:grid!important;grid-template-columns:72px minmax(0,1fr) auto!important;gap:14px!important;align-items:center!important;
+  padding:10px 16px!important;margin:0!important;border:0!important;border-top:2px solid #b99458!important;border-radius:0!important;
+  background:linear-gradient(180deg,rgba(24,27,34,.985),rgba(8,11,16,.99))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important;color:#fff!important;z-index:auto!important;animation:none!important;
+}
+.dialog[hidden]{display:none!important}
+.dialog:after{display:none!important;content:none!important}
+.dialog .face{width:62px!important;height:62px!important;border-radius:10px!important;overflow:hidden!important;background:#eef3f6!important;border:2px solid #c9a76b!important;box-shadow:0 0 0 2px rgba(0,0,0,.28)!important}
+.dialog .dname{font-size:13px!important;font-weight:900!important;color:#f0c976!important;margin:0 0 4px!important;letter-spacing:.04em!important}
+.dialog .dtext{font-size:14px!important;line-height:1.6!important;color:#fff!important;text-align:left!important}
+.dialog .primary{background:#f4f4f4!important;color:#263849!important;border:1px solid rgba(255,255,255,.24)!important;box-shadow:none!important;padding:8px 12px!important}
+@media(max-width:700px){
+  .dialog{grid-template-columns:52px 1fr!important;gap:10px!important;min-height:72px!important;padding:8px 10px!important}
+  .dialog .face{width:48px!important;height:48px!important}
+  .dialog .dname{font-size:12px!important}.dialog .dtext{font-size:12px!important;line-height:1.5!important}
+  .dialog .primary{grid-column:2!important;justify-self:start!important}
+}
+</style>
+
+<style id="v26-patch">
+.intro-overlay{padding:14px!important;background:rgba(239,247,251,.38)!important;backdrop-filter:blur(3px)!important}
+.intro-visual-card{position:relative!important;width:min(820px,96%)!important;max-width:none!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;border-radius:28px!important;overflow:visible!important}
+.intro-visual{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 30px rgba(45,76,101,.16));user-select:none;pointer-events:none}
+.intro-start-hotspot{position:absolute;left:30.5%;top:22.7%;width:39%;height:16.5%;border:0;border-radius:999px;background:transparent;cursor:pointer;outline:none}
+.intro-start-hotspot:focus-visible{outline:4px solid rgba(77,136,187,.7);outline-offset:4px}
+@media(hover:hover){.intro-start-hotspot:hover{background:rgba(255,255,255,.07);box-shadow:0 0 0 5px rgba(255,255,255,.10)}}
+.control-strip{display:none!important}
+.control-hint{max-width:660px!important;white-space:normal!important;line-height:1.45!important}
+.dialog{min-height:94px!important;grid-template-columns:88px minmax(0,1fr) auto!important;padding:8px 16px 8px 12px!important}
+.dialog .face{width:80px!important;height:82px!important;border-radius:12px!important;background:linear-gradient(#eef7fc,#dfeaf2)!important;align-self:end!important}
+.dialog .face canvas{width:100%!important;height:100%!important}
+.dname{font-size:13px!important}.dtext{font-size:14px!important;line-height:1.55!important}
+@media(max-width:680px){.intro-visual-card{width:100%!important}.intro-overlay{padding:6px!important}.dialog{grid-template-columns:70px minmax(0,1fr)!important;min-height:88px!important}.dialog .face{width:64px!important;height:72px!important}.control-hint{left:10px!important;right:10px!important;max-width:none!important;font-size:10px!important}}
+</style>
+
+<style id="v29-patch">
+/* Stage UI now behaves like game signage, not website pills. */
+#sceneLabel{position:relative;background:linear-gradient(180deg,#fffaf0,#f7ead2)!important;border:2px solid #d7ac72!important;color:#315b79!important;border-radius:16px!important;padding:9px 18px 9px 38px!important;box-shadow:0 6px 0 rgba(132,94,55,.12),0 10px 20px rgba(70,91,106,.12)!important;backdrop-filter:none!important}
+#sceneLabel:before{content:'✦';position:absolute;left:13px;top:50%;transform:translateY(-50%);width:18px;height:18px;display:grid;place-items:center;border-radius:50%;background:#6f9fc2;color:#fff;font-size:10px;box-shadow:0 0 0 3px rgba(111,159,194,.16)}
+#taskLabel{background:linear-gradient(180deg,#fffaf0,#f6e6cb)!important;border:2px solid #d7ac72!important;color:#5b6f80!important;box-shadow:0 6px 0 rgba(132,94,55,.1),0 10px 18px rgba(70,91,106,.1)!important;backdrop-filter:none!important}
+.mission-card{left:24px!important;top:72px!important;width:min(390px,43%)!important;padding:19px 24px 18px 30px!important;background:linear-gradient(180deg,rgba(255,251,240,.98),rgba(249,237,214,.98))!important;border:3px solid #d3a267!important;border-radius:23px!important;box-shadow:0 7px 0 rgba(126,87,48,.13),0 15px 28px rgba(70,87,102,.14)!important}
+.mission-card:before{left:14px!important;top:18px!important;bottom:18px!important;width:6px!important;background:linear-gradient(#f3b35c,#e58b3d)!important;box-shadow:0 0 0 3px rgba(243,179,92,.12)!important}
+.mission-card:after{content:'✦';position:absolute;right:18px;top:14px;color:#e8a94f;font-size:22px;text-shadow:0 0 10px rgba(241,188,88,.4)}
+.mission-card .lab{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;background:#4e7898;color:#fff!important;font-size:11px!important;letter-spacing:.05em!important;box-shadow:0 3px 0 rgba(42,82,112,.15)}
+.mission-card .main{font-size:25px!important;color:#315b79!important;margin-top:9px!important}
+.mission-card .sub{color:#687d8e!important;margin-top:6px!important}
+/* Poster is mounted into the illustrated wooden frame instead of floating as a card. */
+.poster-dom{left:76.5%!important;right:auto!important;top:24.5%!important;width:9.5%!important;height:27%!important;padding:5px!important;background:#ead0a7!important;border:7px solid #9b7048!important;border-radius:7px!important;box-shadow:0 4px 0 #765136,0 10px 22px rgba(66,47,29,.22)!important;transform:rotate(.7deg);overflow:visible!important}
+.poster-dom img{object-fit:cover!important;border-radius:2px!important;background:#fff!important}
+.poster-dom:after{content:'🔍';position:absolute;right:-15px;bottom:-15px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#fff;border:3px solid #d5e3ed;box-shadow:0 4px 10px rgba(49,75,94,.2);font-size:17px;transform:rotate(-.7deg)}
+/* Hint system uses the RPG dialogue rail; the center pill is retired. */
+.scaffold-btn{display:none!important}
+/* Correct only the third intro mission label without regenerating the whole artwork. */
+.intro-third-label-fix{position:absolute;left:68.3%;top:84.2%;width:27.2%;height:9.4%;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff0cf,#f6d598);border:3px solid #a96c32;border-radius:18px;color:#4e2b18;font-weight:950;font-size:clamp(15px,2.2vw,30px);letter-spacing:.04em;box-shadow:inset 0 2px 0 rgba(255,255,255,.72);pointer-events:none;text-shadow:0 1px 0 rgba(255,255,255,.5)}
+/* Keep controls quiet and secondary. */
+.control-hint{background:rgba(255,253,248,.9)!important;border:1px solid rgba(165,127,82,.2)!important;color:#567084!important}
+.ally-pill{background:linear-gradient(180deg,#fffaf1,#f8ecd8)!important;border:1px solid #dec199!important;color:#5b6f80!important}
+@media(max-width:700px){
+  .mission-card{left:12px!important;top:62px!important;width:min(390px,58%)!important;padding:14px 16px 13px 23px!important}
+  .mission-card .main{font-size:18px!important}.mission-card .sub{font-size:11px!important}
+  .poster-dom{left:auto!important;right:8%!important;top:22%!important;width:12%!important;height:24%!important;border-width:4px!important}
+  #sceneLabel{padding:8px 12px 8px 32px!important;font-size:11px!important}
+  .intro-third-label-fix{font-size:clamp(12px,3.6vw,20px);border-width:2px;border-radius:12px}
+}
+
+/* v33: compact decision board, cleaner stage HUD, easier professor interaction */
+#sortOverlay{overflow:hidden!important;align-items:center!important;padding:12px!important}
+#sortOverlay .sort-modal{width:min(760px,calc(100% - 20px))!important;max-height:calc(100% - 12px)!important;overflow:hidden!important;padding:16px 22px 16px!important;border-radius:26px!important}
+#sortOverlay .sort-modal h2{font-size:24px!important;margin-bottom:5px!important}
+#sortOverlay .sort-intro{font-size:12.5px!important;line-height:1.55!important}
+#sortOverlay .sort-helper{font-size:11.5px!important;margin-top:1px!important}
+#sortOverlay .sort-partner{margin-top:9px!important;padding:8px 11px!important;grid-template-columns:48px 1fr!important}
+#sortOverlay .sort-partner-face{width:46px!important;height:46px!important}
+#sortOverlay .sort-modal .choice-board{gap:7px!important;margin-top:10px!important}
+#sortOverlay .sort-modal .sort-card{padding:8px 10px!important;border-radius:15px!important;grid-template-columns:36px minmax(0,1fr) auto!important}
+#sortOverlay .sort-modal .sort-card small{margin-top:2px!important;line-height:1.4!important;font-size:11.5px!important}
+#sortOverlay .sort-modal .sort-card b{font-size:14px!important}
+#sortOverlay .sort-icon{font-size:18px!important}
+#sortOverlay .sort-num{width:30px!important;height:30px!important;font-size:12px!important}
+#sortOverlay .sort-actions button{width:32px!important;height:32px!important}
+#sortOverlay .sort-modal .actions-row{margin-top:10px!important}
+#sortOverlay .sort-modal .primary{padding:9px 16px!important}
+#sortOverlay .sort-modal .skill-box{margin-top:8px!important;padding:12px 14px!important;line-height:1.55!important}
+.ally-pill{left:auto!important;right:24px!important;top:126px!important;max-width:250px!important;padding:8px 11px!important;border-radius:15px!important}
+@media(max-width:700px){.ally-pill{right:12px!important;top:116px!important;max-width:42%!important;font-size:10px!important}}
+</style>
+
+
+<style id="v34-unified-quest-ui">
+/* v34: one visual language for all three stages — fairy-tale signpost + quest board */
+#sceneLabel{
+  position:relative!important;
+  min-height:42px;
+  display:flex!important;align-items:center!important;
+  padding:9px 22px 9px 50px!important;
+  background:
+    radial-gradient(circle at 18px 50%,rgba(255,255,255,.78) 0 8px,transparent 9px),
+    linear-gradient(180deg,#fffaf0 0%,#f8e9ce 100%)!important;
+  border:2px solid #c99455!important;
+  border-radius:18px!important;
+  color:#2f5877!important;
+  font-size:13px!important;font-weight:950!important;letter-spacing:.02em!important;
+  box-shadow:0 3px 0 #fff7e8 inset,0 -2px 0 rgba(159,105,54,.12) inset,0 6px 0 rgba(118,80,42,.14),0 12px 24px rgba(57,78,92,.14)!important;
+  backdrop-filter:none!important;
+}
+#sceneLabel:before{
+  content:'✦'!important;position:absolute!important;left:10px!important;top:50%!important;transform:translateY(-50%)!important;
+  width:30px!important;height:30px!important;display:grid!important;place-items:center!important;
+  border-radius:50%!important;background:linear-gradient(180deg,#7caac8,#5c8caf)!important;color:white!important;
+  border:3px solid #eef7fb!important;box-shadow:0 0 0 2px #d7ae70,0 3px 8px rgba(54,86,109,.18)!important;font-size:12px!important;
+}
+#sceneLabel:after{
+  content:'';position:absolute;inset:4px 7px;border-radius:13px;border:1px solid rgba(255,255,255,.72);pointer-events:none;
+}
+#taskLabel{
+  background:linear-gradient(180deg,#fffaf0,#f7e9cf)!important;border:2px solid #d0a061!important;border-radius:18px!important;
+  color:#4f687d!important;font-weight:950!important;padding:9px 15px!important;
+  box-shadow:0 3px 0 rgba(255,255,255,.75) inset,0 6px 0 rgba(118,80,42,.1),0 10px 20px rgba(57,78,92,.11)!important;
+  backdrop-filter:none!important;
+}
+.mission-card{
+  left:38px!important;top:82px!important;width:min(450px,47%)!important;
+  padding:25px 30px 23px 42px!important;
+  background:
+    radial-gradient(circle at 92% 18%,rgba(255,220,143,.22),transparent 90px),
+    linear-gradient(180deg,rgba(255,252,242,.99),rgba(249,237,214,.99))!important;
+  border:3px solid #c99455!important;border-radius:27px!important;
+  box-shadow:
+    0 0 0 4px rgba(255,249,235,.95),
+    0 0 0 7px rgba(88,126,155,.72),
+    0 8px 0 rgba(115,77,42,.14),
+    0 18px 32px rgba(54,71,83,.16)!important;
+  overflow:visible!important;pointer-events:none!important;
+}
+.mission-card:before{
+  content:''!important;left:17px!important;top:25px!important;bottom:25px!important;width:7px!important;border-radius:8px!important;
+  background:linear-gradient(#ffc56b,#e98f40)!important;box-shadow:0 0 0 3px rgba(255,190,102,.16)!important;
+}
+.mission-card:after{
+  content:'✦'!important;right:22px!important;top:16px!important;color:#e7a43f!important;font-size:25px!important;
+  text-shadow:0 0 12px rgba(236,174,70,.38)!important;
+}
+.mission-card .lab{
+  display:inline-flex!important;align-items:center!important;gap:6px!important;
+  padding:5px 12px!important;border-radius:999px!important;
+  background:linear-gradient(180deg,#5f89a8,#426f91)!important;color:#fff!important;
+  border:1px solid rgba(255,255,255,.5)!important;
+  box-shadow:0 3px 0 rgba(42,75,99,.18),0 6px 12px rgba(52,83,105,.12)!important;
+  font-size:11.5px!important;font-weight:950!important;letter-spacing:.055em!important;
+}
+.mission-card .main{
+  display:flex!important;align-items:center!important;gap:9px!important;
+  margin-top:12px!important;color:#2e5877!important;font-size:29px!important;font-weight:950!important;line-height:1.22!important;
+  text-shadow:0 1px 0 rgba(255,255,255,.75)!important;
+}
+.mission-card .main:before{content:'📖';font-size:25px;line-height:1;filter:saturate(.75)}
+.mission-card .sub{margin-top:8px!important;color:#62798b!important;font-size:13.5px!important;line-height:1.55!important;font-weight:700!important}
+/* Partner status is supporting information, not part of the quest board. */
+.ally-pill{
+  left:auto!important;right:28px!important;top:132px!important;max-width:255px!important;
+  padding:8px 12px!important;border-radius:16px!important;
+  background:linear-gradient(180deg,rgba(255,251,241,.96),rgba(247,233,208,.95))!important;
+  border:1.5px solid #d6ad73!important;color:#526b80!important;
+  box-shadow:0 5px 0 rgba(114,79,43,.09),0 10px 20px rgba(56,76,90,.12)!important;
+}
+/* Once stage 2 is solved, keep the header calm and let NEXT carry the progression cue. */
+.game-wrap[data-scene='forest'][data-solved='true'] .mission-card{opacity:.9}
+@media(max-width:700px){
+  #sceneLabel{padding:8px 12px 8px 42px!important;font-size:11px!important;min-height:38px}
+  #sceneLabel:before{width:25px!important;height:25px!important;left:9px!important}
+  .mission-card{left:14px!important;top:68px!important;width:min(430px,60%)!important;padding:16px 18px 15px 28px!important;border-radius:20px!important;box-shadow:0 0 0 3px #fff8e8,0 0 0 5px rgba(88,126,155,.68),0 8px 20px rgba(54,71,83,.14)!important}
+  .mission-card:before{left:12px!important;top:17px!important;bottom:17px!important;width:5px!important}
+  .mission-card .lab{font-size:10px!important;padding:4px 9px!important}
+  .mission-card .main{font-size:18px!important;gap:5px!important}.mission-card .main:before{font-size:17px}
+  .mission-card .sub{font-size:10.5px!important;margin-top:5px!important}
+  .ally-pill{right:12px!important;top:118px!important;max-width:38%!important;font-size:9.5px!important;padding:6px 8px!important}
+}
+</style>
+
+
+<style id="v36-forest-cleanup">
+/* V36: second-stage information hierarchy */
+.game-wrap[data-scene='forest'] .ally-pill{
+  right:28px!important;top:118px!important;max-width:none!important;white-space:nowrap!important;
+  padding:7px 11px!important;border-radius:999px!important;background:rgba(49,93,125,.92)!important;
+  color:#fff!important;border:1px solid rgba(255,255,255,.76)!important;box-shadow:0 4px 12px rgba(42,67,84,.16)!important;
+  font-size:10.5px!important;letter-spacing:.01em!important;
+}
+#taskLabel.is-action{cursor:pointer!important;background:linear-gradient(180deg,#fff7df,#ffe8bd)!important;border-color:#efb35c!important;color:#8a5b27!important;box-shadow:0 0 0 3px rgba(255,244,211,.85),0 8px 20px rgba(205,139,61,.22)!important;animation:v36Pulse 1.35s ease-in-out infinite}
+@keyframes v36Pulse{0%,100%{transform:translateY(0);filter:brightness(1)}50%{transform:translateY(-1px);filter:brightness(1.06)}}
+</style>
+
+<style id="v37-fairytale-quest-ui">
+/* V37: real fairytale quest signage — shared by all three stages */
+#sceneLabel{
+  position:relative!important;
+  min-height:46px!important;
+  padding:12px 24px 12px 58px!important;
+  border-radius:18px!important;
+  color:#315d7d!important;
+  font-size:14px!important;
+  letter-spacing:.025em!important;
+  background:
+    linear-gradient(180deg,rgba(255,254,246,.99),rgba(255,244,218,.985))!important;
+  border:2px solid #d89a4f!important;
+  box-shadow:
+    0 0 0 3px rgba(255,250,231,.94),
+    0 0 0 5px rgba(92,133,163,.55),
+    0 8px 18px rgba(70,55,36,.18),
+    inset 0 0 0 1px rgba(255,255,255,.92)!important;
+  backdrop-filter:none!important;
+  overflow:visible!important;
+}
+#sceneLabel:before{
+  content:"✦";
+  position:absolute;
+  left:9px;top:50%;transform:translateY(-50%);
+  width:35px;height:35px;border-radius:50%;
+  display:grid;place-items:center;
+  color:white;font-size:17px;
+  background:radial-gradient(circle at 35% 28%,#9fd8f4 0 18%,#6da9cf 19% 57%,#3e789f 58% 100%);
+  border:3px solid #fff7db;
+  box-shadow:0 0 0 2px #d5a45e,0 3px 8px rgba(50,78,97,.25);
+}
+#sceneLabel:after{
+  content:"❦";
+  position:absolute;right:-9px;top:-13px;
+  color:#57856f;font-size:27px;transform:rotate(-18deg);
+  text-shadow:0 2px 0 #fff6df;
+}
+#taskLabel{
+  background:linear-gradient(180deg,#fffdf4,#fff1d2)!important;
+  border:2px solid #dca15c!important;
+  color:#315d7d!important;
+  box-shadow:0 0 0 3px rgba(255,249,229,.92),0 7px 16px rgba(72,58,38,.14)!important;
+  backdrop-filter:none!important;
+}
+.mission-card{
+  left:38px!important;
+  top:94px!important;
+  width:min(455px,47%)!important;
+  min-height:170px!important;
+  padding:58px 34px 28px 52px!important;
+  border-radius:30px!important;
+  background:
+    radial-gradient(circle at 24% 22%,rgba(255,255,255,.92),transparent 34%),
+    linear-gradient(145deg,#fffef7 0%,#fff8e8 58%,#fff0cf 100%)!important;
+  border:3px solid #d99a50!important;
+  box-shadow:
+    0 0 0 5px #fff9e9,
+    0 0 0 9px #547fa0,
+    0 0 0 11px rgba(255,244,211,.94),
+    0 16px 30px rgba(65,51,32,.22),
+    inset 0 0 0 2px rgba(255,255,255,.95)!important;
+  overflow:visible!important;
+  isolation:isolate;
+}
+.mission-card:before{
+  content:""!important;
+  position:absolute!important;
+  left:20px!important;top:48px!important;bottom:25px!important;
+  width:7px!important;
+  border-radius:8px!important;
+  background:linear-gradient(180deg,#ffbd65,#ef8e3c)!important;
+  box-shadow:0 0 0 3px rgba(255,246,220,.92),0 3px 8px rgba(204,125,50,.22)!important;
+}
+.mission-card:after{
+  content:""!important;
+  position:absolute!important;
+  inset:13px!important;
+  border:1px solid rgba(219,165,91,.55)!important;
+  border-radius:21px!important;
+  pointer-events:none;
+  background:none!important;
+}
+.mission-card .lab{
+  position:absolute!important;
+  top:18px!important;left:54px!important;
+  display:inline-flex!important;align-items:center!important;
+  padding:6px 15px!important;
+  border-radius:999px!important;
+  color:#fff!important;
+  font-size:12px!important;font-weight:900!important;
+  letter-spacing:.055em!important;
+  background:linear-gradient(180deg,#5c88aa,#3d698b)!important;
+  border:1px solid rgba(255,255,255,.76)!important;
+  box-shadow:0 4px 12px rgba(55,86,110,.22),inset 0 1px 0 rgba(255,255,255,.25)!important;
+  z-index:3;
+}
+.mission-card .main:before{content:none!important;display:none!important}
+.mission-card .main{
+  display:flex!important;align-items:center!important;gap:12px!important;
+  margin-top:0!important;
+  color:#2e5a79!important;
+  font-size:28px!important;line-height:1.18!important;font-weight:950!important;
+  text-shadow:0 1px 0 #fff!important;
+  position:relative;z-index:2;
+}
+.mission-card .sub{
+  margin-top:11px!important;
+  color:#5e788d!important;
+  font-size:14px!important;line-height:1.55!important;font-weight:750!important;
+  position:relative;z-index:2;
+}
+.mission-book{
+  flex:0 0 auto;
+  width:38px;height:33px;
+  display:grid;place-items:center;
+  font-size:23px;line-height:1;
+  color:#c58e47;
+  background:linear-gradient(180deg,#fff9e5,#ffe8b9);
+  border:2px solid #d8a35e;
+  border-radius:7px 7px 9px 9px;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.7),0 3px 8px rgba(101,73,35,.12);
+  transform:rotate(-3deg);
+}
+.mission-corner{position:absolute;z-index:4;color:#e7a142;text-shadow:0 2px 7px rgba(226,155,59,.18);pointer-events:none}
+.mission-corner-tl{left:18px;top:14px;font-size:20px}.mission-corner-tr{right:20px;top:21px;font-size:24px}
+.mission-leaf{position:absolute;z-index:4;color:#5e8b72;font-size:30px;pointer-events:none;text-shadow:0 2px 0 #fff3d2}
+.mission-leaf-tr{right:-12px;top:-20px;transform:rotate(-28deg)}.mission-leaf-bl{left:-14px;bottom:-18px;transform:rotate(18deg)}
+.mission-compass{
+  position:absolute;left:-24px;bottom:-27px;z-index:5;
+  width:53px;height:53px;border-radius:50%;
+  display:grid;place-items:center;
+  background:radial-gradient(circle,#fffceb 0 45%,#edc889 46% 51%,#6d95ae 52% 61%,#f6e2ad 62% 100%);
+  border:2px solid #ba8240;
+  box-shadow:0 4px 10px rgba(70,55,35,.25),inset 0 0 0 2px rgba(255,255,255,.8);
+}
+.mission-compass:before,.mission-compass:after{content:"";position:absolute;left:50%;top:50%;background:#416d8d;transform-origin:center}
+.mission-compass:before{width:3px;height:28px;transform:translate(-50%,-50%) rotate(28deg);border-radius:2px}
+.mission-compass:after{width:28px;height:3px;transform:translate(-50%,-50%) rotate(28deg);border-radius:2px}
+.mission-compass i{width:9px;height:9px;border-radius:50%;background:#f0a348;border:2px solid #fff6dd;box-shadow:0 0 0 1px #9c7040;z-index:2}
+.game-wrap[data-scene='forest'] .mission-card,.game-wrap[data-scene='run'] .mission-card{top:94px!important}
+.game-wrap[data-scene='forest'] .mission-card .lab,.game-wrap[data-scene='run'] .mission-card .lab{background:linear-gradient(180deg,#5d8e79,#3f705e)!important}
+@media(max-width:760px){
+  #sceneLabel{min-height:39px!important;padding:9px 14px 9px 46px!important;font-size:11px!important;border-radius:15px!important}
+  #sceneLabel:before{width:29px;height:29px;left:8px;font-size:14px}
+  .mission-card{left:16px!important;top:66px!important;width:min(430px,67%)!important;min-height:130px!important;padding:47px 22px 20px 40px!important;border-radius:22px!important;box-shadow:0 0 0 3px #fff9e9,0 0 0 6px #547fa0,0 9px 20px rgba(65,51,32,.18)!important}
+  .mission-card .lab{left:42px!important;top:14px!important;font-size:9px!important;padding:4px 9px!important}
+  .mission-card .main{font-size:18px!important;gap:8px!important}.mission-book{width:29px;height:26px;font-size:17px}
+  .mission-card .sub{font-size:10.5px!important;margin-top:6px!important}
+  .mission-compass{width:40px;height:40px;left:-18px;bottom:-20px}.mission-leaf{font-size:22px}
+}
+</style>
+
+<style id="v38-real-art-ui">
+/* V38: use the six generated PNG assets as the actual quest UI. */
+#sceneLabel{display:none!important}
+.stage-plaque-art{position:absolute;left:18px;top:10px;width:min(370px,39%);height:auto;z-index:7;pointer-events:none;filter:drop-shadow(0 8px 12px rgba(62,49,31,.20));user-select:none}
+.stage-plaque-art[hidden]{display:none!important}
+.mission-card{left:24px!important;top:78px!important;width:min(510px,53%)!important;min-height:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;pointer-events:none!important}
+.mission-card:before,.mission-card:after{display:none!important}
+.mission-card > *:not(.mission-art){display:none!important}
+.mission-card .mission-art{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;filter:drop-shadow(0 11px 14px rgba(56,46,31,.22));user-select:none;pointer-events:none}
+.game-wrap[data-scene='forest'] .mission-card,.game-wrap[data-scene='run'] .mission-card{width:min(500px,52%)!important}
+/* Keep right-side progress readable without competing with the generated art. */
+#taskLabel{top:auto!important;max-width:260px!important}
+@media(max-width:700px){
+ .stage-plaque-art{left:8px;top:8px;width:min(315px,51%)}
+ .mission-card{left:10px!important;top:58px!important;width:min(430px,65%)!important}
+ .game-wrap[data-scene='forest'] .mission-card,.game-wrap[data-scene='run'] .mission-card{width:min(420px,64%)!important}
+}
+</style>
+
+<style id="v39-companion-patch">
+/* V39: companion identity is a quiet status chip; abilities belong in dialogue, not floating banners. */
+.ally-pill{
+  right:18px!important;
+  top:62px!important;
+  max-width:180px!important;
+  padding:7px 11px!important;
+  border-radius:999px!important;
+  background:rgba(255,250,239,.94)!important;
+  border:1.5px solid rgba(211,164,98,.88)!important;
+  color:#466983!important;
+  font-size:11px!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+  box-shadow:0 6px 14px rgba(73,72,58,.11)!important;
+  backdrop-filter:blur(5px)!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  z-index:6!important;
+  pointer-events:none!important;
+}
+.ally-pill:before{content:'✦';color:#dca34d;margin-right:6px}
+@media(max-width:700px){
+  .ally-pill{right:10px!important;top:58px!important;max-width:150px!important;font-size:10px!important;padding:6px 9px!important}
+}
+</style>
+
+<style id="v40-layout-music-patch">
+/* V40: rebalance quest art: mission board leads, stage plaque becomes secondary status below it. */
+.stage-plaque-art{
+  left:38px!important;
+  top:192px!important;
+  width:min(305px,32%)!important;
+  z-index:6!important;
+  filter:drop-shadow(0 7px 10px rgba(61,48,29,.18))!important;
+}
+.mission-card{
+  left:18px!important;
+  top:8px!important;
+  width:min(500px,52%)!important;
+  z-index:7!important;
+}
+.game-wrap[data-scene='forest'] .mission-card,
+.game-wrap[data-scene='run'] .mission-card{
+  width:min(500px,52%)!important;
+}
+/* Stage plaque is deliberately smaller and lower than the mission board. */
+.game-wrap[data-scene='forest'] .stage-plaque-art,
+.game-wrap[data-scene='run'] .stage-plaque-art{
+  left:38px!important;
+  top:205px!important;
+  width:min(285px,30%)!important;
+}
+@media(max-width:700px){
+  .mission-card{left:8px!important;top:6px!important;width:min(430px,65%)!important}
+  .game-wrap[data-scene='forest'] .mission-card,
+  .game-wrap[data-scene='run'] .mission-card{width:min(430px,65%)!important}
+  .stage-plaque-art{left:18px!important;top:166px!important;width:min(250px,39%)!important}
+  .game-wrap[data-scene='forest'] .stage-plaque-art,
+  .game-wrap[data-scene='run'] .stage-plaque-art{left:18px!important;top:176px!important;width:min(240px,38%)!important}
+}
+</style>
+
+
+<style id="v41-interaction-layout-patch">
+/* V41: mission art leads at top-left; stage plaque becomes a quiet bottom-left chapter marker. */
+.mission-card{left:18px!important;top:10px!important;width:min(500px,52%)!important;z-index:7!important}
+.stage-plaque-art{left:22px!important;right:auto!important;top:auto!important;bottom:18px!important;width:min(300px,31%)!important;z-index:6!important;filter:drop-shadow(0 7px 10px rgba(61,48,29,.18))!important;pointer-events:none!important}
+.game-wrap[data-scene='forest'] .stage-plaque-art,.game-wrap[data-scene='run'] .stage-plaque-art{left:22px!important;top:auto!important;bottom:18px!important;width:min(300px,31%)!important}
+.mission-name-overlay{position:absolute;left:50%;top:7.5%;transform:translateX(-50%);width:58%;min-height:28px;display:flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;background:linear-gradient(180deg,#2e5d92,#1f4778);border:2px solid #d9ab4d;color:#fff5cf;font-size:clamp(9px,1.05vw,12px);font-weight:950;letter-spacing:.04em;white-space:nowrap;box-shadow:0 2px 0 rgba(255,255,255,.15) inset,0 4px 10px rgba(38,54,72,.2);z-index:3;pointer-events:none}
+#taskLabel.is-action{pointer-events:auto!important;cursor:pointer!important;z-index:12!important}
+.poster-zoom{cursor:pointer!important}
+.poster-cta{margin-top:8px;font-size:12px;font-weight:900;color:#426d91}
+@media(max-width:700px){.stage-plaque-art{left:10px!important;bottom:10px!important;width:min(240px,50%)!important}.mission-card{left:8px!important;top:8px!important;width:min(420px,68%)!important}.mission-name-overlay{top:6.8%;width:62%;font-size:9px}}
+</style>
+
+<style id="v42-game-ui-patch">
+:root{--frame-dialog:url("asset-01.png");--frame-quest:url("asset-02.png");--frame-result:url("asset-03.png")}
+/* v42: remove redundant HUD chips and keep the scene focused on characters + mission art */
+#sceneLabel,#taskLabel,.ally-pill{display:none!important}
+.stage-plaque-art{left:18px!important;bottom:2px!important;width:min(270px,28%)!important;max-height:84px!important;object-fit:contain!important}
+.mission-name-overlay{font-size:clamp(12px,1.6vw,20px)!important;letter-spacing:.08em!important}
+/* Center-stage clue action appears only when all three clues are collected. */
+.clue-action{position:absolute;left:50%;top:66%;transform:translate(-50%,-50%);z-index:20;min-width:210px;border:2px solid #c99149;border-radius:20px;padding:11px 22px;background:linear-gradient(180deg,#fffdf5,#f8e6c4);color:#315b79;box-shadow:0 0 0 4px rgba(255,249,234,.84),0 8px 0 rgba(126,83,39,.13),0 16px 30px rgba(57,78,92,.19);cursor:pointer;animation:questPulse 1.8s ease-in-out infinite}
+.clue-action[hidden]{display:none!important}.clue-action small{display:block;color:#94713f;font-size:11px;font-weight:900;margin-bottom:2px}.clue-action strong{font-size:18px;font-weight:950;letter-spacing:.04em}
+@keyframes questPulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.035)}}
+/* All modal layers: outside may scroll if a very small screen needs it, but the popup itself never has an internal scrollbar. */
+.overlay{overflow-y:auto!important;scrollbar-width:none!important;padding:12px!important;align-items:center!important}.overlay::-webkit-scrollbar{display:none!important}
+.modal,.quest-modal,.result-modal{position:relative!important;max-height:none!important;overflow:visible!important;border:0!important;box-shadow:0 24px 70px rgba(32,47,60,.30)!important;color:#31546e!important}
+.modal:not(.result-modal){width:min(920px,96vw)!important;background:#fffaf0 var(--frame-quest) center/100% 100% no-repeat!important;padding:66px 68px 58px!important;border-radius:34px!important}
+.result-modal{width:min(940px,96vw)!important;background:#fffaf0 var(--frame-result) center/100% 100% no-repeat!important;padding:64px 70px 58px!important;border-radius:34px!important}
+.modal h2,.quest-head h2{font-size:clamp(24px,2.6vw,31px)!important;line-height:1.25!important;color:#315c7b!important;margin:0 0 8px!important}.modal p,.quest-head p{font-size:15px!important;line-height:1.55!important;color:#60778b!important}
+.quest-ribbon{font-size:13px!important;padding:7px 14px!important;background:linear-gradient(180deg,#456f98,#284f7a)!important;border:1px solid #d7ad62!important;box-shadow:0 4px 10px rgba(50,74,96,.18)!important}
+.quest-head{margin-top:10px!important}.quest-spark{color:#e8a23e!important}
+/* Dialogue uses the generated dialogue-frame asset as a real frame via border-image; central HTML text stays editable. */
+.dialog{position:static!important;display:grid!important;grid-template-columns:82px minmax(0,1fr) auto!important;gap:15px!important;min-height:112px!important;padding:16px 30px 15px 28px!important;background:#fffaf0!important;color:#31546e!important;border:26px solid transparent!important;border-image-source:var(--frame-dialog)!important;border-image-slice:250 205 235 255!important;border-image-width:28px 30px!important;border-image-repeat:stretch!important;box-shadow:0 12px 28px rgba(48,69,86,.18)!important}
+.dialog .face{width:74px!important;height:74px!important;border-radius:50%!important;background:#eef7fd!important;border:2px solid #d3aa62!important;box-shadow:0 0 0 4px rgba(255,255,255,.8)!important}.dialog .dname{font-size:14px!important;color:#7a5a2e!important;margin-bottom:5px!important}.dialog .dtext{font-size:16px!important;line-height:1.55!important;color:#2f5877!important}.dialog .primary{background:linear-gradient(180deg,#456f98,#315c82)!important;color:#fff!important;border:1px solid #d4ad67!important;border-radius:14px!important;padding:10px 15px!important;white-space:nowrap!important}
+/* Sorting board: larger text, tighter copy, no form-like look. */
+.sort-modal{width:min(860px,95vw)!important;padding:60px 64px 52px!important}.sort-modal .sort-partner{margin-top:12px!important;background:rgba(255,250,239,.82)!important;border:1px solid #dfbd82!important}.sort-modal .sort-partner b{font-size:14px!important}.sort-modal .sort-partner p{font-size:14px!important;color:#5e6e7c!important;font-weight:800!important}.sort-modal .sort-card{min-height:70px!important;background:rgba(255,255,255,.88)!important;border:1.5px solid #cbdce7!important;padding:10px 13px!important}.sort-modal .sort-card b{font-size:16px!important}.sort-modal .sort-card small{font-size:13.5px!important;line-height:1.4!important}.sort-modal .sort-actions button{width:42px!important;height:42px!important;font-size:20px!important}.sort-modal .skill-box{font-size:15px!important;line-height:1.65!important}
+/* Third task: six choices still fit in one screen, but labels are larger and copy is shorter. */
+.deadline-progress,.team-count{display:inline-flex;margin-top:12px;padding:6px 12px;border-radius:999px;background:#fff2d7;border:1px solid #e0ba79;color:#775b34;font-size:13px;font-weight:950}.deadline-modal .deadline-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin-top:12px!important}.deadline-modal .deadline-card{min-height:94px!important;padding:10px 12px!important;background:rgba(255,255,255,.9)!important}.deadline-modal .deadline-card b{font-size:15px!important}.deadline-modal .deadline-card small{font-size:12.5px!important;line-height:1.35!important}.deadline-modal .deadline-card .emoji{font-size:22px!important}.feedback-list{margin-top:8px!important}.compact-summary{font-size:13px!important}
+.stage3-picked{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0 14px}.picked-chip{padding:10px 14px;border-radius:16px;background:#fff6e6;border:1.5px solid #dfbd82;color:#315c7b;font-weight:950;font-size:15px}.stage3-summary{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.78);border:1px solid #d8e4ea;color:#4f6576;font-size:15px;line-height:1.6}
+/* Final team / results */
+.team-modal{width:min(930px,96vw)!important}.team-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important}.team-card{background:rgba(255,255,255,.88)!important;border-color:#cadde8!important}.team-card.selected{border-color:#e79c3f!important;background:#fff0d5!important;box-shadow:0 7px 18px rgba(222,147,57,.14)!important}.team-card strong{font-size:14px!important}.team-card small{font-size:11.5px!important}
+.end-modal-v42{width:min(940px,96vw)!important}.radar-layout{grid-template-columns:minmax(300px,.95fr) minmax(290px,1.05fr)!important;gap:16px!important}.radar-panel{min-height:285px!important;background:rgba(255,255,255,.74)!important;border-color:#d1e0e9!important}.result-strengths{display:grid;gap:10px}.strength-card{display:grid;grid-template-columns:38px 1fr;gap:10px;align-items:center;padding:12px 14px;border-radius:17px;background:rgba(255,255,255,.82);border:1px solid #d6e3ea}.strength-card .ico{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#fff1d7;font-size:18px}.strength-card b{display:block;color:#315c7b;font-size:15px}.strength-card small{display:block;color:#6d8091;font-size:12.5px;line-height:1.4;margin-top:2px}.explain-toggle{margin-top:10px;border:1px solid #d8b77f;background:#fff8e9;color:#725b39;border-radius:999px;padding:7px 11px;font-weight:900;cursor:pointer}.radar-note{margin-top:9px!important;font-size:13px!important;line-height:1.55!important}.research-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:18px}.research-card{padding:16px;border-radius:19px;background:rgba(255,255,255,.82);border:1px solid #d2e1e9}.research-card span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#456f98;color:#fff;font-size:11px;font-weight:950;margin-bottom:8px}.research-card b{display:block;color:#315c7b;font-size:16px;margin-bottom:5px}.research-card p{font-size:13.5px!important;margin:0!important;line-height:1.5!important}.research-bridge{margin-top:14px;padding:13px 15px;border-radius:17px;background:#fff4df;border:1px solid #dfbe86;color:#5d5a51;font-size:14px;line-height:1.6}.result-actions{align-items:stretch}.result-action-card{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important}
+/* Nudge when player tries to skip the third-stage briefing. */
+.dialog.nudge{animation:dialogNudge .32s ease 2}@keyframes dialogNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}
+@media(max-width:720px){.stage-plaque-art{width:min(230px,35%)!important}.clue-action{top:61%;min-width:175px;padding:9px 14px}.modal:not(.result-modal),.result-modal,.sort-modal{width:100%!important;padding:54px 28px 46px!important;border-radius:24px!important}.dialog{grid-template-columns:58px minmax(0,1fr)!important;border-width:18px!important;border-image-width:20px!important;padding:12px 18px!important;min-height:98px!important}.dialog .face{width:54px!important;height:54px!important}.dialog .dtext{font-size:14px!important}.dialog .primary{grid-column:2!important;justify-self:start!important}.deadline-modal .deadline-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.radar-layout{grid-template-columns:1fr!important}.research-cards{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="v43-dark-rpg-dialogue">
+/* v43: restore the dialogue rail to a restrained dark RPG style.
+   Generated ornate frames remain for task/result popups, not the dialogue rail. */
+.dialog{
+  position:static!important;
+  display:grid!important;
+  grid-template-columns:78px minmax(0,1fr) auto!important;
+  gap:15px!important;
+  align-items:center!important;
+  width:100%!important;
+  min-height:98px!important;
+  margin:0!important;
+  padding:12px 18px 12px 14px!important;
+  color:#fff!important;
+  background:
+    radial-gradient(circle at 14% 0%,rgba(72,112,148,.16),transparent 34%),
+    linear-gradient(180deg,#1b222c 0%,#0b0f15 100%)!important;
+  border:0!important;
+  border-top:2px solid #c59b57!important;
+  border-bottom:1px solid rgba(255,255,255,.06)!important;
+  border-image:none!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 -8px 22px rgba(5,9,13,.14)!important;
+  overflow:hidden!important;
+}
+.dialog:before{
+  content:'';
+  position:absolute;
+  left:0;right:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,220,154,.6),transparent);
+  pointer-events:none;
+}
+.dialog .face{
+  width:70px!important;height:70px!important;
+  border-radius:14px!important;
+  overflow:hidden!important;
+  background:linear-gradient(180deg,#edf4f8,#dbe7ee)!important;
+  border:2px solid #c7a263!important;
+  box-shadow:0 0 0 2px rgba(0,0,0,.42),0 5px 14px rgba(0,0,0,.28)!important;
+}
+.dialog .dname{
+  margin:0 0 4px!important;
+  color:#f0c979!important;
+  font-size:14px!important;
+  font-weight:950!important;
+  letter-spacing:.035em!important;
+}
+.dialog .dtext{
+  color:#f7f8fa!important;
+  font-size:16px!important;
+  line-height:1.55!important;
+  text-shadow:0 1px 0 rgba(0,0,0,.25)!important;
+}
+.dialog .primary{
+  min-width:118px!important;
+  padding:10px 16px!important;
+  border-radius:12px!important;
+  border:1px solid #b99155!important;
+  background:linear-gradient(180deg,#456f94,#2f5678)!important;
+  color:#fff!important;
+  font-weight:950!important;
+  box-shadow:0 5px 12px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)!important;
+  white-space:nowrap!important;
+}
+.dialog .primary:hover{filter:brightness(1.08)}
+@media(max-width:720px){
+  .dialog{grid-template-columns:58px minmax(0,1fr)!important;gap:10px!important;min-height:86px!important;padding:9px 11px!important}
+  .dialog .face{width:54px!important;height:54px!important;border-radius:11px!important}
+  .dialog .dname{font-size:12.5px!important}.dialog .dtext{font-size:14px!important;line-height:1.5!important}
+  .dialog .primary{grid-column:2!important;justify-self:start!important;min-width:0!important;padding:8px 12px!important}
+}
+</style>
+
+
+<style id="v44-stage3-result-refine">
+/* V44: stage 3 result is a compact RPG result panel, not a large decorative web modal. */
+#stage3ResultOverlay{
+  background:rgba(11,18,25,.68)!important;
+  backdrop-filter:blur(3px)!important;
+  padding:18px!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+#stage3ResultOverlay .stage3-result-modal{
+  width:min(680px,calc(100vw - 36px))!important;
+  padding:24px 28px 22px!important;
+  border-radius:22px!important;
+  border:2px solid #c7a15c!important;
+  outline:1px solid rgba(255,255,255,.12)!important;
+  background:
+    radial-gradient(circle at 85% 12%,rgba(216,171,83,.10),transparent 23%),
+    linear-gradient(180deg,#17212c 0%,#0d141d 100%)!important;
+  box-shadow:0 22px 60px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.08)!important;
+  color:#f5efe3!important;
+  overflow:hidden!important;
+}
+#stage3ResultOverlay .stage3-result-modal:before{
+  content:'';position:absolute;inset:8px;border:1px solid rgba(217,178,100,.30);border-radius:16px;pointer-events:none;
+}
+#stage3ResultOverlay .stage3-result-modal:after{
+  content:'✦';position:absolute;right:22px;top:18px;color:#e2b45e;font-size:22px;text-shadow:0 0 14px rgba(226,180,94,.28);pointer-events:none;
+}
+#stage3ResultOverlay .quest-ribbon{
+  display:inline-flex!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0 0 7px!important;
+  color:#e5bd73!important;
+  font-size:12px!important;
+  letter-spacing:.12em!important;
+}
+#stage3ResultOverlay .quest-head{margin:0!important;padding-right:44px!important;display:block!important}
+#stage3ResultOverlay .quest-head h2{
+  margin:0 0 4px!important;
+  color:#fff8e7!important;
+  font-size:27px!important;
+  line-height:1.22!important;
+  letter-spacing:.02em!important;
+}
+#stage3ResultOverlay .quest-head p{
+  margin:0!important;
+  color:#c8d2db!important;
+  font-size:14px!important;
+  line-height:1.5!important;
+}
+#stage3ResultOverlay .quest-spark{display:none!important}
+#stage3ResultOverlay .stage3-picked{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:9px!important;
+  margin:18px 0 12px!important;
+}
+#stage3ResultOverlay .picked-chip{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  min-height:44px!important;
+  padding:9px 10px!important;
+  border-radius:12px!important;
+  background:rgba(255,249,235,.96)!important;
+  border:1px solid #cfaa68!important;
+  color:#314e67!important;
+  font-size:14px!important;
+  font-weight:950!important;
+  box-shadow:0 4px 12px rgba(0,0,0,.14)!important;
+}
+#stage3ResultOverlay .stage3-summary{
+  margin:0!important;
+  padding:12px 14px!important;
+  border-radius:12px!important;
+  background:rgba(255,255,255,.06)!important;
+  border:1px solid rgba(215,231,242,.16)!important;
+  color:#dce5ec!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+}
+#stage3ResultOverlay .stage3-summary b{color:#f1c878!important}
+#stage3ResultOverlay .actions-row{margin-top:14px!important;justify-content:flex-end!important}
+#stage3ResultOverlay #stage3ResultClose{
+  min-width:150px!important;
+  padding:10px 18px!important;
+  border-radius:12px!important;
+  background:linear-gradient(180deg,#426f98,#2d587e)!important;
+  color:#fff!important;
+  border:1px solid #caa35e!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.24)!important;
+  font-size:14px!important;
+}
+#stage3ResultOverlay #stage3ResultClose:hover{filter:brightness(1.08)}
+@media(max-width:620px){
+  #stage3ResultOverlay{padding:10px!important}
+  #stage3ResultOverlay .stage3-result-modal{width:100%!important;padding:20px 18px 18px!important;border-radius:18px!important}
+  #stage3ResultOverlay .quest-head h2{font-size:23px!important}
+  #stage3ResultOverlay .stage3-picked{grid-template-columns:1fr!important}
+  #stage3ResultOverlay .actions-row{justify-content:stretch!important}
+  #stage3ResultOverlay #stage3ResultClose{width:100%!important}
+}
+</style>
+
+
+<style id="v47-sort-interaction-fix">
+/* v47: sort board must actually move on mouse, keyboard and touch. */
+#sortOverlay{overflow:auto!important;overflow-x:hidden!important;touch-action:pan-y!important;overscroll-behavior:contain!important;scrollbar-width:none!important}
+#sortOverlay::-webkit-scrollbar{display:none!important}
+#sortOverlay .sort-modal{margin:auto!important;pointer-events:auto!important}
+#sortOverlay .choice-board,#sortOverlay .sort-card,#sortOverlay .sort-actions,#sortOverlay button{pointer-events:auto!important}
+#sortOverlay .sort-card{cursor:pointer!important;touch-action:pan-y!important;outline:none!important}
+#sortOverlay .sort-card.sort-active,#sortOverlay .sort-card:focus-visible{box-shadow:0 0 0 3px rgba(85,126,157,.18),0 5px 14px rgba(61,84,101,.08)!important}
+#sortOverlay .sort-actions button:not(:disabled){cursor:pointer!important;position:relative!important;z-index:3!important}
+#sortOverlay .sort-actions button:active{transform:translateY(1px) scale(.97)!important}
+#sortOverlay .sort-helper:after{content:'  電腦也可用方向鍵；手機可在卡片上往上／往下滑。';}
+@media(max-height:700px){#sortOverlay{align-items:flex-start!important;padding-top:10px!important;padding-bottom:10px!important}#sortOverlay .sort-modal{margin:0 auto!important}}
+</style>
+
+<style id="v50-end-result-dark-rpg">
+/* V50: keep the research-result layout, but use the stage-3 dark RPG palette. */
+#endOverlay{
+  background:rgba(11,18,25,.70)!important;
+  backdrop-filter:blur(4px)!important;
+  padding:18px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:auto!important;
+  scrollbar-width:none!important;
+}
+#endOverlay::-webkit-scrollbar{display:none!important}
+#endOverlay .end-modal-v42{
+  width:min(930px,calc(100vw - 36px))!important;
+  max-height:calc(100vh - 36px)!important;
+  overflow:auto!important;
+  scrollbar-width:none!important;
+  padding:26px 30px 24px!important;
+  border-radius:24px!important;
+  border:2px solid #c7a15c!important;
+  outline:1px solid rgba(255,255,255,.12)!important;
+  background:
+    radial-gradient(circle at 86% 10%,rgba(216,171,83,.10),transparent 22%),
+    linear-gradient(180deg,#17212c 0%,#0d141d 100%)!important;
+  box-shadow:0 24px 64px rgba(0,0,0,.46),inset 0 1px 0 rgba(255,255,255,.08)!important;
+  color:#f5efe3!important;
+}
+#endOverlay .end-modal-v42::-webkit-scrollbar{display:none!important}
+#endOverlay .end-modal-v42:before{
+  content:''!important;
+  position:absolute!important;
+  inset:9px!important;
+  border:1px solid rgba(217,178,100,.30)!important;
+  border-radius:17px!important;
+  pointer-events:none!important;
+}
+#endOverlay .end-modal-v42:after{
+  content:'✦'!important;
+  position:absolute!important;
+  right:24px!important;
+  top:20px!important;
+  color:#e2b45e!important;
+  font-size:22px!important;
+  text-shadow:0 0 14px rgba(226,180,94,.28)!important;
+  pointer-events:none!important;
+}
+#endOverlay .quest-ribbon{
+  display:inline-flex!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+  margin:0 0 8px!important;
+  color:#e5bd73!important;
+  font-size:12px!important;
+  letter-spacing:.12em!important;
+}
+#endOverlay .quest-head{
+  margin:0 0 16px!important;
+  padding-right:42px!important;
+  align-items:flex-start!important;
+}
+#endOverlay .quest-head h2{
+  margin:0 0 5px!important;
+  color:#fff8e7!important;
+  font-size:30px!important;
+  line-height:1.18!important;
+  letter-spacing:.02em!important;
+}
+#endOverlay .quest-head p,
+#endOverlay .radar-intro{
+  margin:0!important;
+  text-align:left!important;
+  color:#c8d2db!important;
+  font-size:14px!important;
+  line-height:1.5!important;
+}
+#endOverlay .quest-spark{display:none!important}
+
+/* Layout stays the same: radar left, three strengths right. */
+#endOverlay .radar-layout{
+  grid-template-columns:minmax(300px,.95fr) minmax(300px,1.05fr)!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+#endOverlay .radar-panel{
+  min-height:300px!important;
+  border-radius:18px!important;
+  padding:12px!important;
+  background:linear-gradient(180deg,#f8f2e7,#eee5d7)!important;
+  border:1px solid #c9a667!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 8px 20px rgba(0,0,0,.16)!important;
+}
+#endOverlay .radar-panel svg{max-width:400px!important}
+#endOverlay .result-strengths{gap:10px!important}
+#endOverlay .strength-card{
+  grid-template-columns:42px 1fr!important;
+  gap:11px!important;
+  min-height:82px!important;
+  padding:12px 14px!important;
+  border-radius:15px!important;
+  background:linear-gradient(180deg,#fffaf0,#f5eddf)!important;
+  border:1px solid #c9a667!important;
+  box-shadow:0 6px 16px rgba(0,0,0,.15)!important;
+}
+#endOverlay .strength-card .ico{
+  width:40px!important;height:40px!important;
+  background:#fff1d7!important;
+  border:1px solid rgba(201,166,103,.55)!important;
+}
+#endOverlay .strength-card b{
+  color:#314e67!important;
+  font-size:16px!important;
+}
+#endOverlay .strength-card small{
+  color:#6a7885!important;
+  font-size:13px!important;
+  line-height:1.42!important;
+}
+#endOverlay .explain-toggle{
+  margin-top:12px!important;
+  border:1px solid #c9a667!important;
+  background:rgba(255,249,235,.97)!important;
+  color:#5f4b2f!important;
+  border-radius:999px!important;
+  padding:8px 13px!important;
+  font-weight:950!important;
+  box-shadow:0 4px 10px rgba(0,0,0,.14)!important;
+}
+#endOverlay .radar-note{
+  margin-top:10px!important;
+  padding:12px 14px!important;
+  border-radius:12px!important;
+  background:rgba(255,255,255,.06)!important;
+  border:1px solid rgba(215,231,242,.16)!important;
+  color:#dce5ec!important;
+  font-size:13.5px!important;
+  line-height:1.55!important;
+}
+#endOverlay .actions-row{
+  margin-top:14px!important;
+  justify-content:flex-end!important;
+}
+#endOverlay #endNextBtn,
+#endOverlay .result-actions .primary{
+  min-width:170px!important;
+  padding:10px 18px!important;
+  border-radius:12px!important;
+  background:linear-gradient(180deg,#426f98,#2d587e)!important;
+  color:#fff!important;
+  border:1px solid #caa35e!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.24)!important;
+}
+#endOverlay #endNextBtn:hover,
+#endOverlay .result-actions .primary:hover{filter:brightness(1.08)!important}
+
+/* Page 2 follows the same dark-RPG result language. */
+#endOverlay .research-cards{gap:11px!important;margin-top:16px!important}
+#endOverlay .research-card{
+  padding:15px!important;
+  border-radius:15px!important;
+  background:linear-gradient(180deg,#fffaf0,#f5eddf)!important;
+  border:1px solid #c9a667!important;
+  box-shadow:0 6px 16px rgba(0,0,0,.14)!important;
+}
+#endOverlay .research-card span{
+  background:#315f86!important;
+  color:#fff!important;
+  border:1px solid #caa35e!important;
+}
+#endOverlay .research-card b{color:#314e67!important}
+#endOverlay .research-card p{color:#6a7885!important}
+#endOverlay .research-bridge{
+  background:rgba(255,255,255,.06)!important;
+  border:1px solid rgba(215,231,242,.16)!important;
+  color:#dce5ec!important;
+}
+#endOverlay .result-actions .secondary,
+#endOverlay .result-action-card{
+  border:1px solid #c9a667!important;
+  background:rgba(255,249,235,.96)!important;
+  color:#314e67!important;
+  box-shadow:0 4px 10px rgba(0,0,0,.14)!important;
+}
+
+@media(max-width:760px){
+  #endOverlay{padding:10px!important;align-items:flex-start!important}
+  #endOverlay .end-modal-v42{width:100%!important;max-height:none!important;padding:22px 16px 20px!important;border-radius:20px!important}
+  #endOverlay .quest-head h2{font-size:24px!important}
+  #endOverlay .radar-layout{grid-template-columns:1fr!important}
+  #endOverlay .radar-panel{min-height:260px!important}
+  #endOverlay .research-cards{grid-template-columns:1fr!important}
+}
+</style>
+
+
+<style id="v51-private-ending-actions">
+.result-actions-private{justify-content:center!important;gap:12px!important}
+.result-actions-private .secondary,.result-actions-private .primary{min-width:180px;text-align:center;justify-content:center}
+@media(max-width:640px){.result-actions-private{flex-direction:column;align-items:stretch}.result-actions-private .secondary,.result-actions-private .primary{width:100%;min-width:0}}
+</style>
+
+<style id="v53-mobile-complete-fix">
+/* v53 — mobile-first recovery layer. This is deliberately last so it wins over earlier patches. */
+.mobile-controls{display:none}
+@media (max-width:700px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}
+  body{overscroll-behavior-y:auto}
+  .site{width:100%;max-width:none;margin:0;padding:0 0 28px!important}
+  .portal{width:100%;border-radius:0!important;border-left:0!important;border-right:0!important;overflow:visible!important}
+  .portal-head{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:7px!important;padding:8px 10px!important;min-height:0!important}
+  .portal-brand-stack{width:100%!important;min-width:0!important}
+  .portal-brand-stack b{font-size:13px!important;white-space:normal!important}
+  .portal-brand-stack small{font-size:9px!important}
+  .top-actions{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;width:100%!important}
+  .chip-btn{width:100%!important;min-width:0!important;padding:8px 4px!important;font-size:11px!important;line-height:1.15!important;touch-action:manipulation!important}
+
+  /* The stage stays 16:9, but all desktop-only decorative clutter is removed. */
+  .game-wrap{width:100%!important;overflow:hidden!important;touch-action:pan-y pinch-zoom!important;background:#dff3ff!important}
+  .game-wrap canvas{width:100%!important;height:auto!important;aspect-ratio:16/9!important;touch-action:none!important}
+  .control-hint,.stage-plaque-art{display:none!important}
+  .poster-dom{right:8px!important;top:54px!important;width:64px!important;height:72px!important;border-width:3px!important;padding:3px!important}
+  .poster-dom:after{display:none!important}
+
+  /* Mobile task banner: compact, readable, never covers half the stage. */
+  .mission-card{
+    display:block!important;left:8px!important;right:8px!important;top:8px!important;width:auto!important;min-height:0!important;
+    padding:8px 10px 8px 13px!important;border:1.5px solid #d7a55f!important;border-radius:14px!important;
+    background:rgba(255,250,239,.94)!important;box-shadow:0 5px 14px rgba(33,50,63,.16)!important;
+    overflow:hidden!important;backdrop-filter:blur(3px)!important;
+  }
+  .mission-card:before{left:0!important;top:0!important;bottom:0!important;width:5px!important;border-radius:0!important;box-shadow:none!important}
+  .mission-card:after,.mission-corner,.mission-leaf,.mission-compass,.mission-book{display:none!important}
+  .mission-card .lab{position:static!important;display:inline-flex!important;padding:3px 7px!important;font-size:8.5px!important;margin:0 0 3px!important;box-shadow:none!important}
+  .mission-card .main{font-size:14px!important;line-height:1.15!important;margin:0!important;display:block!important;padding:0!important}
+  .mission-card .sub{font-size:9.5px!important;line-height:1.3!important;margin-top:2px!important;font-weight:700!important;max-width:82%!important}
+  .game-wrap[data-scene='forest'] .mission-card,.game-wrap[data-scene='run'] .mission-card{top:8px!important}
+  .clue-action{top:auto!important;bottom:12px!important;min-width:0!important;width:auto!important;max-width:58%!important;padding:8px 12px!important;border-radius:14px!important;white-space:nowrap!important}
+  .clue-action small{font-size:9px!important}.clue-action strong{font-size:13px!important}
+  .toast{top:auto!important;bottom:62px!important;max-width:88%!important;white-space:normal!important;text-align:center!important;font-size:11px!important;line-height:1.35!important}
+  .evidence-pop{left:8px!important;right:8px!important;bottom:8px!important;width:auto!important;max-width:none!important;padding:9px 10px!important}
+
+  /* Explicit touch controls replace unreliable up-swipe on portrait phones. */
+  .mobile-controls{position:absolute;right:8px;bottom:8px;z-index:26;display:grid;grid-template-columns:44px 44px 48px;gap:6px;pointer-events:auto}
+  .mobile-controls button{height:44px;border-radius:13px;border:1.5px solid #d3aa62;background:rgba(14,27,41,.88);color:#fff;font-size:20px;font-weight:950;box-shadow:0 4px 12px rgba(0,0,0,.22);touch-action:manipulation;user-select:none;-webkit-user-select:none}
+  .mobile-controls button:active{transform:translateY(1px);filter:brightness(1.12)}
+  .mobile-controls .jump{font-size:12px;line-height:1.1}
+
+  /* Dark RPG dialogue: one readable stack with a full-width next button. */
+  .dialog{width:100%!important;grid-template-columns:52px minmax(0,1fr)!important;gap:9px!important;min-height:0!important;padding:9px 10px!important;border-top:1.5px solid #b89458!important;border-left:0!important;border-right:0!important;border-bottom:0!important;border-image:none!important;background:linear-gradient(180deg,#14202d,#0a121c)!important;box-shadow:none!important}
+  .dialog .face{width:50px!important;height:50px!important;border-radius:10px!important}
+  .dialog .dname{font-size:12px!important;margin-bottom:2px!important}.dialog .dtext{font-size:13.5px!important;line-height:1.45!important}
+  .dialog .primary{grid-column:1/-1!important;justify-self:stretch!important;width:100%!important;min-height:42px!important;margin-top:2px!important;padding:9px 12px!important;font-size:13px!important;border-radius:11px!important;touch-action:manipulation!important}
+
+  /* Intro: keep artwork, but provide a real visible mobile start button. */
+  .intro-overlay{padding:6px!important;align-items:center!important}
+  .intro-visual-card{width:100%!important;max-width:none!important}
+  .intro-start-hotspot{left:18%!important;top:auto!important;bottom:6%!important;width:64%!important;height:18%!important;background:linear-gradient(180deg,#527fa4,#315d82)!important;border:2px solid #ddb467!important;border-radius:16px!important;box-shadow:0 7px 18px rgba(20,40,58,.28)!important;color:#fff!important;display:flex!important;align-items:center!important;justify-content:center!important;opacity:.96!important}
+  .intro-start-hotspot:after{content:'開始體驗 →';font-size:14px;font-weight:950;letter-spacing:.03em;color:#fff}
+  .intro-third-label-fix{display:none!important}
+
+  /* Every popup scrolls as a page, never as a tiny internal box. */
+  .overlay,.quest-overlay,.result-overlay{align-items:flex-start!important;justify-content:center!important;overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior:contain!important;padding:8px!important;scrollbar-width:none!important;max-height:none!important}
+  .overlay::-webkit-scrollbar,.quest-overlay::-webkit-scrollbar,.result-overlay::-webkit-scrollbar{display:none!important}
+  .modal,.quest-modal,.result-modal,.sort-modal,.deadline-modal,.team-modal,.resume-modal,.poster-modal,.end-modal-v42{
+    width:100%!important;max-width:none!important;max-height:none!important;min-height:0!important;margin:0 auto 12px!important;overflow:visible!important;
+    padding:18px 14px 16px!important;border-radius:18px!important;background:#fffaf0!important;border:2px solid #cda35f!important;
+    box-shadow:0 12px 34px rgba(26,42,55,.28)!important;color:#31546e!important;
+  }
+  .result-modal,.stage3-result-modal,#endOverlay .end-modal-v42{background:linear-gradient(180deg,#111c28,#09121c)!important;border-color:#c9a45f!important;color:#eef4f8!important}
+  .quest-modal:before,.quest-modal:after,.modal:before,.modal:after{display:none!important}
+  .quest-ribbon{font-size:11px!important;padding:5px 9px!important;border-radius:999px!important}
+  .quest-head{margin-top:7px!important;gap:8px!important}.quest-head h2,.modal h2{font-size:22px!important;line-height:1.2!important;margin-bottom:5px!important}.quest-head p,.modal p{font-size:13px!important;line-height:1.45!important}.quest-spark{font-size:20px!important;margin-right:0!important}
+  .actions-row{display:flex!important;flex-direction:column!important;gap:8px!important;width:100%!important;margin-top:12px!important}
+  .actions-row .primary,.actions-row .secondary,.quest-primary,#closeHelp,.result-action-card{width:100%!important;min-width:0!important;min-height:44px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:10px 12px!important;font-size:13px!important;touch-action:manipulation!important}
+  .close-x{width:42px!important;height:42px!important;touch-action:manipulation!important}
+
+  /* Sort board */
+  #sortOverlay .sort-modal{padding:16px 12px 14px!important}
+  #sortOverlay .sort-partner{grid-template-columns:42px 1fr!important;padding:8px 9px!important;margin-top:9px!important}.sort-partner-face{width:40px!important;height:40px!important}
+  #sortOverlay .choice-board{gap:8px!important;margin-top:10px!important}
+  #sortOverlay .sort-card{grid-template-columns:32px minmax(0,1fr) 88px!important;gap:7px!important;padding:9px!important;min-height:62px!important;border-radius:14px!important}
+  #sortOverlay .sort-card b{font-size:13.5px!important}.sort-modal .sort-card small{font-size:11px!important;line-height:1.35!important}
+  #sortOverlay .sort-actions{display:grid!important;grid-template-columns:42px 42px!important;gap:6px!important}
+  #sortOverlay .sort-actions button{width:42px!important;height:42px!important;font-size:19px!important;touch-action:manipulation!important}
+  #sortOverlay .sort-helper{font-size:10.5px!important}.sort-helper:after{content:' 點右側箭頭調整。'!important}
+
+  /* Stage 3 choices: one card per row on phone so labels never collapse. */
+  .deadline-modal .deadline-grid{grid-template-columns:1fr!important;gap:8px!important;margin-top:10px!important}
+  .deadline-modal .deadline-card{min-height:0!important;padding:10px 12px!important;border-radius:14px!important}
+  .deadline-modal .deadline-card .emoji{font-size:20px!important;margin-bottom:3px!important}.deadline-modal .deadline-card b{font-size:14px!important}.deadline-modal .deadline-card small{font-size:11.5px!important;line-height:1.35!important}
+  .deadline-progress,.team-count{font-size:11.5px!important;margin-top:8px!important;padding:5px 9px!important}
+
+  /* Team and result */
+  .team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin-top:10px!important}
+  .team-card{padding:8px!important;border-radius:14px!important}.team-art{width:58px!important;height:58px!important}.team-card strong{font-size:12.5px!important}.team-card small{font-size:10px!important}
+  .radar-layout{grid-template-columns:1fr!important;gap:10px!important}.radar-panel{min-height:0!important;padding:5px!important}.radar-panel svg{max-width:100%!important}
+  .result-strengths{gap:8px!important}.strength-card{grid-template-columns:34px 1fr!important;padding:10px!important}.strength-card .ico{width:34px!important;height:34px!important}.strength-card b{font-size:13.5px!important}.strength-card small{font-size:11px!important}
+  #endOverlay .quest-head h2,#stage3ResultOverlay .quest-head h2{color:#fff6e8!important}#endOverlay .quest-head p,#stage3ResultOverlay .quest-head p{color:#c7d2dc!important}
+  #endOverlay .radar-note,#stage3ResultOverlay .stage3-summary{font-size:12px!important;line-height:1.45!important}
+  .research-cards{grid-template-columns:1fr!important;gap:8px!important}.research-card{padding:12px!important}.research-card b{font-size:14px!important}.research-card p{font-size:12px!important}.research-bridge{font-size:12px!important;line-height:1.45!important}
+
+  /* Long informational sections below the game are readable, not squeezed. */
+  .info{margin-top:12px!important;padding:18px 14px!important;border-radius:18px!important}.info-head h2{font-size:23px!important}.info-grid{grid-template-columns:1fr!important;gap:18px!important;margin-top:16px!important}.manual,.steps{grid-template-columns:1fr!important}.tags{gap:5px!important}.tag{font-size:10px!important;padding:5px 7px!important}
+}
+@media (max-width:390px){
+  .mission-card .sub{display:none!important}
+  .team-grid{grid-template-columns:1fr 1fr!important}
+  .mobile-controls{grid-template-columns:42px 42px 46px}.mobile-controls button{height:42px}
+}
+</style>
+
+</head>
+<body>
+<div class="site">
+<section class="portal">
+<div class="portal-head">
+  <div class="portal-brand portal-brand-stack">
+    <span class="brand-dot"></span>
+    <div><b>陳玉君の迷你簡歷遊戲</b><small>kinmy's Resume Game</small></div>
+  </div>
+  <div class="top-actions">
+    <button class="chip-btn" id="musicBtn" aria-pressed="false" title="溫暖清亮的吉他和弦配樂">音樂 OFF</button>
+    <button class="chip-btn" id="helpBtn">遊戲說明</button>
+    <button class="chip-btn" id="restartBtn">重新開始</button>
+  </div>
+</div>
+<div class="game-wrap" id="gameWrap">
+<canvas id="game" width="960" height="540"></canvas>
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-card intro-visual-card">
+    <img class="intro-visual" src="asset-04.png" alt="限時組隊任務：找夥伴、找出問題、試過再優化">
+    <div class="intro-third-label-fix" aria-hidden="true">試過再優化</div>
+    <button class="intro-start-hotspot" id="startExperience" type="button" aria-label="開始體驗" title="開始體驗"></button>
+  </div>
+</div>
+<div class="hud"><div class="hud-pill" id="sceneLabel">第 1/3 關｜找誰一起出發？</div><div class="hud-pill" id="taskLabel">先去找侯教授</div></div>
+<img class="stage-plaque-art" id="stagePlaqueArt" alt="關卡標題牌">
+<div class="toast" id="toast"></div><div class="evidence-pop" id="evidencePop" hidden><div class="ep-kicker">履歷證據解鎖</div><b id="evidencePopTitle"></b><span id="evidencePopText"></span></div>
+<div class="mission-card" id="missionCard">
+  <img class="mission-art" id="missionArt" alt="本關任務"><div class="mission-name-overlay">研究勇者募集令</div>
+  <span class="mission-corner mission-corner-tl" aria-hidden="true">✦</span>
+  <span class="mission-corner mission-corner-tr" aria-hidden="true">✦</span>
+  <span class="mission-leaf mission-leaf-tr" aria-hidden="true">❦</span>
+  <span class="mission-leaf mission-leaf-bl" aria-hidden="true">❧</span>
+  <span class="mission-compass" aria-hidden="true"><i></i></span>
+  <div class="lab">✦ 今日任務 ✦</div>
+  <div class="main" id="missionMain"><span class="mission-book" aria-hidden="true">📖</span><span class="mission-title-text">研究小隊集結中</span></div>
+  <div class="sub" id="missionSub">先認識大家，再選一位夥伴一起出發。</div>
+</div>
+<div class="poster-dom" id="posterDom"><img src="asset-05.png" alt="NTUST MEG ARG MAKER 活動海報"></div>
+<div class="ally-pill" id="allyPill" hidden>今日夥伴：尚未選擇</div>
+<button class="clue-action" id="clueAction" hidden type="button"><small>3 個線索都找到了！</small><strong>整理線索 →</strong></button>
+
+<div class="mobile-controls" id="mobileControls" aria-label="手機操作"><button type="button" id="mobileLeft" aria-label="向左移動">◀</button><button type="button" id="mobileRight" aria-label="向右移動">▶</button><button type="button" id="mobileJump" class="jump" aria-label="跳躍">跳躍<br>↑</button></div>
+</div>
+<div class="dialog" id="dialogBox" hidden><div class="face"><canvas id="faceCanvas" width="96" height="96"></canvas></div><div><div class="dname" id="dialogName">對話</div><div class="dtext" id="dialogText"></div></div><button class="primary" id="dialogNext" hidden>繼續</button></div>
+
+</section>
+<section class="info">
+<div class="info-head"><div><div style="font-size:12px;font-weight:900;color:#7790a5;letter-spacing:.15em;margin-bottom:5px">GAME INFO</div><h2>陳玉君の迷你簡歷遊戲</h2><div style="font-size:13px;color:#7a8da0;font-weight:800;margin-top:3px">kinmy's Resume Game</div></div><div class="tags"><span class="tag">日系網頁小遊戲</span><span class="tag">場景探索</span><span class="tag">角色組隊</span><span class="tag">約 4–6 分鐘</span></div></div>
+<div class="info-grid"><div>
+<h3>遊戲介紹</h3><p><b>這不只是一份履歷，還是一個可以自己走進去玩的迷你遊戲。</b></p><p>你會經過三個小任務：先找夥伴一起出發、再找出大家真正卡住的地方，最後把複雜的事情拆小，先做一個版本試試看。</p><p>在玩的過程中，你會慢慢認識陳玉君：她怎麼和不同的人一起做事、怎麼把問題弄清楚，又怎麼把原本不好懂的事情，變得比較好理解、比較容易開始。</p><p><b>邊玩邊認識陳玉君，不用先從一大段文字開始。</b></p><p>玩到最後，你會大概知道陳玉君做過什麼、平常怎麼做事，以及接下來想研究什麼。</p><div class="resume-route"><b>三關其實就是三件事：</b><span>找人一起做 → 找出大家卡在哪裡 → 把事情拆小再試一次</span><small>玩完後，你會大概了解陳玉君如何從真實問題出發，整理需求、整合不同觀點，並把想法轉化成可以實際驗證的方案。</small></div>
+<h3 style="margin-top:24px">遊戲流程</h3><div class="steps"><div class="step"><div class="step-num">01</div><b>找誰一起出發？</b><span>先看看每個人會什麼，再選一位夥伴陪你一起解任務。</span></div><div class="step"><div class="step-num">02</div><b>大家到底卡在哪裡？</b><span>找出三個卡住的地方，再選一個最想先幫忙解決的。</span></div><div class="step"><div class="step-num">03</div><b>試過再優化</b><span>先把事情拆小，做一個能試的版本，再看看哪裡需要調整。</span></div><div class="step"><div class="step-num">04</div><b>最後再組一個研究小隊</b><span>看看不同的人放在一起，會變成什麼樣的隊伍。</span></div></div>
+<div class="design-card"><b>這個遊戲要你自己動手：</b>走一走、找線索、選夥伴，還要想想下一步要做什麼。<br><b>如果卡住：</b>遊戲會幫你一下；知道怎麼做後，就讓你自己來。</div>
+</div><div><h3>角色介紹</h3><div class="char-list" id="charList"></div><div class="note"><b>彩蛋提示：</b>研究室的冰箱、侯教授本人，以及 ARG MAKER 海報，都藏著可以點的小彩蛋。</div><div class="bgm-credit"><b>🎸 BGM</b><br>《A Small Fire Will Do》— Trex0n<br>CC0 公眾領域授權｜Acoustic Guitar・JRPG Loop<br><a href="https://opengameart.org/content/a-small-fire-will-do-calming-loop" target="_blank" rel="noopener">查看音樂來源與授權</a></div></div></div>
+</section>
+</div>
+
+<div class="overlay" id="helpOverlay"><div class="modal"><h2>怎麼玩？</h2><p>很簡單：<b>走過去、點一下、想一想。</b></p><div class="manual"><div class="manual-card"><b>電腦</b>點地面，陳玉君就會走過去；點人物或發亮的東西，就能互動。</div><div class="manual-card"><b>手機</b>左右滑動移動、上滑跳躍；看到想看的角色或物件就點一下。</div><div class="manual-card"><b>每一關都不一樣</b>第一關找夥伴，第二關找出大家卡住的地方，第三關把事情拆小、先試一版。</div><div class="manual-card"><b>找不到下一步？</b>先看左側的「今日任務」，再注意場景中發亮的地方。</div><div class="manual-card"><b>卡住也沒關係</b>需要時，「提示小幫手」會在遊戲下方出現，不會擋住場景。</div><div class="manual-card"><b>可以到處亂點</b>冰箱、海報等地方也藏著小彩蛋。</div></div><button class="primary" id="closeHelp">開始吧</button></div></div>
+
+<div class="overlay" id="posterOverlay"><div class="modal poster-modal"><div class="resume-head"><div><div class="resume-kicker">NTUST MEG EASTER EGG</div><h2>ARG MAKER 活動海報</h2></div><button class="close-x" id="closePoster" type="button" aria-label="關閉">×</button></div><img id="posterZoomImg" class="poster-zoom" alt="NTUST MEG ARG MAKER 活動海報" title="點海報前往報名"><div class="poster-cta">點海報前往報名 ↗</div></div></div>
+<div class="overlay" id="resumeOverlay"><div class="modal resume-modal"><div class="resume-head"><div><div class="resume-kicker">JOURNEY NOTES</div><h2>旅程紀錄</h2><p>每過一關，就多知道一件陳玉君以前做過的事。</p></div><button class="close-x" id="closeResume" type="button" aria-label="關閉">×</button></div><div class="resume-evidence-grid" id="resumeEvidenceGrid"></div><div class="resume-foot">最後會一起告訴你：<b>陳玉君做過什麼、會怎麼做、接下來想研究什麼。</b></div></div></div>
+<div class="overlay quest-overlay" id="sortOverlay"><div class="modal quest-modal sort-modal"><div class="quest-ribbon">✦ 整理線索</div><div class="quest-head"><div><h2>一起整理問題</h2><p class="sort-intro"><b>哪個問題要先處理？</b><br>三個問題都重要，但時間有限。先把你最想處理的排到第 1 個。</p><div class="sort-helper">用右邊的 ↑ ↓ 調整順序。</div></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="sort-partner"><div class="sort-partner-face"><canvas id="sortPartnerFace" width="72" height="72"></canvas></div><div><b id="sortPartnerName"></b><p id="sortPartnerHint"></p></div></div><div class="choice-board" id="sortBoard"></div><div class="actions-row" id="sortActions"><button class="primary quest-primary" id="submitSort" type="button" onclick="return window.confirmSortFlow ? window.confirmSortFlow(event) : false">確認順序，開始處理 →</button></div><div id="sortResult" hidden><div class="skill-box" id="sortFeedback"></div><div class="actions-row"><button class="primary quest-primary" id="gamefulSkillBtn" type="button" onclick="return window.continueSortFlow ? window.continueSortFlow(event) : false">我知道了，繼續 →</button></div></div></div></div>
+
+<div class="overlay quest-overlay" id="deadlineOverlay"><div class="modal quest-modal deadline-modal"><div class="quest-ribbon">✦ 今日任務</div><div class="quest-head"><div><h2>先準備哪三件事？</h2><p class="deadline-intro">明天下午就要試玩。<br>先選 3 件最需要先完成的事。</p></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="deadline-progress" id="deadlineProgress">已選 0 / 3</div><div class="deadline-grid" id="deadlineGrid"></div><div class="feedback-list" id="deadlineFeedback"></div><div class="actions-row deadline-actions"><button class="primary quest-primary" id="deadlineFinishBtn" disabled>選好 3 件後繼續 →</button></div></div></div>
+<div class="overlay result-overlay" id="stage3ResultOverlay"><div class="modal result-modal stage3-result-modal"><div class="quest-ribbon">✦ 任務完成</div><div class="quest-head"><div><h2>準備完成！</h2><p>你已經挑好明天試玩前要先做的 3 件事。</p></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="stage3-picked" id="stage3Picked"></div><div class="stage3-summary" id="stage3Summary"></div><div class="actions-row"><button class="primary quest-primary" id="stage3ResultClose">我看完了 →</button></div></div></div>
+
+<div class="overlay quest-overlay" id="teamOverlay"><div class="modal quest-modal team-modal"><div class="quest-ribbon">✦ 最後任務</div><div class="quest-head"><div><h2>組成你的研究小隊</h2><p>選 3 位夥伴，看看你會組出什麼研究方向。</p></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="team-count" id="teamCount">已選 0 / 3</div><div class="team-grid" id="teamGrid"></div><div class="actions-row"><button class="primary quest-primary" id="confirmTeam" disabled>組好隊伍，看看研究戰力 →</button></div></div></div>
+<div class="overlay result-overlay" id="endOverlay"><div class="modal result-modal end-modal-v42">
+<section id="endPage1"><div class="quest-ribbon">✦ 冒險結算</div><div class="quest-head"><div><h2 id="endTitle">你的研究戰力圖</h2><p class="radar-intro" id="endTeam">剛剛的選擇，組出了這樣的研究風格。</p></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="radar-layout"><div class="radar-panel" id="radarChart" aria-label="研究小隊戰力雷達圖"></div><div class="result-strengths" id="endStrengths"></div></div><button class="explain-toggle" id="radarHelpBtn" type="button">？ 怎麼看</button><div class="radar-note" id="radarNote" hidden>越靠外，代表這次選出的隊伍比較常用這種做法。不是能力分數，也不是 NTUST MEG 的正式評量。</div><div class="actions-row"><button class="primary quest-primary" id="endNextBtn">看看研究方向 →</button></div></section>
+<section id="endPage2" hidden><div class="quest-ribbon">✦ 研究方向</div><div class="quest-head"><div><h2>這三關，就是陳玉君常做的三件事</h2><p>把剛剛的冒險，接回工作與未來想研究的方向。</p></div><span class="quest-spark" aria-hidden="true">✦</span></div><div class="research-cards"><div class="research-card"><span>01</span><b>找對的人一起做</b><p>串聯不同領域的夥伴，一起把事情完成。</p></div><div class="research-card"><span>02</span><b>先弄清楚大家卡在哪裡</b><p>把零散問題整理起來，找出真正要先處理的地方。</p></div><div class="research-card"><span>03</span><b>把複雜的事拆簡單</b><p>先做一小版、拿去試，再依回饋慢慢改好。</p></div></div><div class="research-bridge">這些做法也會延伸到研究：如何用情境、遊戲化與提示，幫助人理解複雜問題並形成自己的判斷。</div><div class="actions-row result-actions result-actions-private"><button class="secondary" id="endBackBtn" type="button">← 回研究戰力圖</button><button class="primary result-action-card" id="againBtn" type="button">🔄 重新冒險</button></div></section>
+</div></div>
+
+<script>
+(()=>{
+
+const ASSETS={nextOrb:'asset-06.png',bgLab:'asset-07.jpg',bgForest:'asset-08.jpg',bgRun:'asset-09.jpg',jun:'asset-10.png',prof:'asset-11.png',wolf:'asset-12.png',red:'asset-13.png',snow:'asset-14.png',peter:'asset-15.png'};
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d'),faceCanvas=document.getElementById('faceCanvas'),fctx=faceCanvas.getContext('2d');
+const W=960,H=540,GROUND=462;
+const sceneLabel=document.getElementById('sceneLabel'),taskLabel=document.getElementById('taskLabel'),toast=document.getElementById('toast'),dialogBox=document.getElementById('dialogBox'),dialogName=document.getElementById('dialogName'),dialogText=document.getElementById('dialogText'),dialogNext=document.getElementById('dialogNext'),missionCard=document.getElementById('missionCard'),missionMain=document.getElementById('missionMain'),missionSub=document.getElementById('missionSub'),posterDom=document.getElementById('posterDom'),posterOverlay=document.getElementById('posterOverlay'),posterZoomImg=document.getElementById('posterZoomImg'),allyPill=document.getElementById('allyPill'),scaffoldBtn=null,musicBtn=document.getElementById('musicBtn'),resumeBtn=document.getElementById('resumeBtn'),resumeOverlay=document.getElementById('resumeOverlay'),resumeEvidenceGrid=document.getElementById('resumeEvidenceGrid'),evidencePop=document.getElementById('evidencePop'),evidencePopTitle=document.getElementById('evidencePopTitle'),evidencePopText=document.getElementById('evidencePopText');
+function setMissionTitle(value){if(!missionMain)return;let span=missionMain.querySelector('.mission-title-text');if(!span){missionMain.innerHTML='<span class="mission-book" aria-hidden="true">📖</span><span class="mission-title-text"></span>';span=missionMain.querySelector('.mission-title-text');}span.textContent=value;}
+const QUEST_ART={
+ lab:{stage:'asset-16.png',mission:'asset-17.png',stageAlt:'第 1/3 關｜找誰一起出發？',missionAlt:'研究小隊集結中'},
+ forest:{stage:'asset-18.png',mission:'asset-19.png',stageAlt:'第 2/3 關｜找出問題',missionAlt:'找出大家為什麼遊戲玩不下去'},
+ run:{stage:'asset-20.png',mission:'asset-21.png',stageAlt:'第 3/3 關｜試過再優化',missionAlt:'先做一版試看看'}
+};
+const stagePlaqueArt=document.getElementById('stagePlaqueArt');
+const missionArt=document.getElementById('missionArt');
+let lastQuestArtScene='';
+function syncQuestArt(force=false){
+  const art=QUEST_ART[scene];
+  if(!art){if(stagePlaqueArt)stagePlaqueArt.hidden=true;return;}
+  if(!force&&lastQuestArtScene===scene)return;
+  lastQuestArtScene=scene;
+  if(stagePlaqueArt){stagePlaqueArt.src=art.stage;stagePlaqueArt.alt=art.stageAlt;stagePlaqueArt.hidden=false;}
+  if(missionArt){missionArt.src=art.mission;missionArt.alt=art.missionAlt;}
+}
+
+const imgs={};let assetDone=0;const assetTotal=Object.keys(ASSETS).length;Object.entries(ASSETS).forEach(([id,src])=>{const im=new Image();imgs[id]=im;const done=()=>{assetDone++;if(assetDone===assetTotal){initCharList();drawFace('jun')}};im.onload=done;im.onerror=()=>{console.warn('Asset failed:',id);done()};im.src=src});
+const CHAR={prof:{name:'侯教授',role:'研究室指揮官'},wolf:{name:'大野狼',role:'策略獵人'},red:{name:'小紅帽',role:'線索探險家'},snow:{name:'白雪公主',role:'協作召喚師'},peter:{name:'彼得潘',role:'幻想飛行家'},jun:{name:'陳玉君',role:'遊戲化夢想家'}};
+const CHAR_INFO=[['wolf','大野狼｜策略獵人','快速判斷、找捷徑，但可能漏掉小細節。'],['red','小紅帽｜線索探險家','觀察敏銳，會把被忽略的小問題撿回來。'],['snow','白雪公主｜協作召喚師','讓不同的人願意一起做，但討論也需要時間。'],['peter','彼得潘｜幻想飛行家','敢提出完全不同的方法，也容易飛得有點遠。'],['jun','陳玉君｜遊戲化夢想家','把複雜問題整理成願意參與、可以驗證的互動體驗。']];
+const frames={idle:[0,1,0,2],walk:[4,5,6,7,8,9],jump:[10,11],interact:[12,13],win:[14,15]};
+let scene='lab',dialogQueue=[],dialogAfter=null,dialogHideTimer=null,toastTimer=0,lastTs=0,touchStart=null,touchMoved=false;
+let labStarted=false,allyChoice=null,profClicks=0,clues=new Set(),forestSorted=false,forestSolved=false,forestPriority='start',sortOrder=['start','rules','rank'],deadlineChoices=[],deadlineSolved=false,selected=[];
+let forestJunClicks=0,forestAllyClicks=0,runTaskReady=false;
+let evidenceUnlocked=new Set(),evidencePopTimer=null;
+const player={x:82,y:GROUND,vy:0,dir:1,targetX:null,interactTarget:null,jumps:0,onGround:true,moving:false,pose:'idle',poseStarted:0};
+const clueAction=document.getElementById('clueAction');
+const stage3ResultOverlay=document.getElementById('stage3ResultOverlay');
+let scaffoldTimers=[],scaffoldContext='labStart',scaffoldLevel=0;
+const scaffoldHints={
+ labStart:['可以先去問侯教授，或先亂點研究室裡的東西。','侯教授在畫面左側中間。點他就會開始任務。'],
+ labAlly:['每位夥伴都會借你一種不同能力。','點大野狼、小紅帽、白雪公主或彼得潘其中一位。'],
+ forestFind:['先別找答案，先找「哪裡讓人玩不下去」。','亮亮的地方通常有線索。'],
+ sort:['想想：玩家在哪一刻最容易離開？','如果很難決定，可以先處理「最影響開始」的問題。'],
+ deadline:['想想：明天下午大家要怎麼真的試到這個版本？','先選讓版本能被試玩的事，再補其他細節。'],
+ team:['沒有標準答案，選你想留下的三種工作方式。','陳玉君不是必選；看你想讓研究室長成什麼樣子。']
+};
+function clearScaffold(){scaffoldTimers.forEach(clearTimeout);scaffoldTimers=[];if(scaffoldBtn)scaffoldBtn.hidden=true;scaffoldLevel=0}
+function showScaffoldHint(text){if(!text)return;if(!dialogBox.hidden)return;say('提示小幫手',text,'hint');if(musicOn)softPing(520)}
+function armScaffold(ctx,soft=false){clearScaffold();scaffoldContext=ctx;if(scaffoldBtn)scaffoldBtn.hidden=true;const hs=scaffoldHints[ctx]||[];if(!hs.length)return;const first=soft?26000:15000,second=soft?52000:32000;scaffoldTimers.push(setTimeout(()=>{showScaffoldHint(hs[0]);scaffoldLevel=Math.min(1,hs.length-1)},first));if(hs.length>1){scaffoldTimers.push(setTimeout(()=>{showScaffoldHint(hs[1]);scaffoldLevel=Math.min(2,hs.length-1)},second))}}
+function useScaffold(){const hs=scaffoldHints[scaffoldContext]||[];if(!hs.length)return;const i=Math.min(scaffoldLevel,hs.length-1);showScaffoldHint(hs[i]);scaffoldLevel=Math.min(scaffoldLevel+1,hs.length-1)}
+if(scaffoldBtn){scaffoldBtn.hidden=true;scaffoldBtn.addEventListener('click',useScaffold);}
+const EVIDENCE={
+ collab:{num:'01',title:'找對的人一起做',summary:'我常串聯不同領域的夥伴一起完成任務。',proof:'陳玉君的經驗｜遇到事情時，我會先看看需要哪些不同專長，再把大家串在一起完成任務。'},
+ diagnose:{num:'02',title:'先弄清楚大家卡在哪裡',summary:'我會把大家說的問題整理成問卷、問題卡和簡單的分類工具。',proof:'陳玉君的經驗｜我不急著猜答案，會先把大家說的問題收集起來、分一分，再看看真正卡住的是哪裡。'},
+ prototype:{num:'03',title:'把複雜的事拆簡單',summary:'我會把想法切成一小段、一小段，讓事情比較好理解、也比較好上手，再慢慢改好。',proof:'陳玉君的經驗｜遇到很大的工作，我會先切成幾個小步驟，先做得到的，再一點一點修好。'}
+};
+function renderEvidence(){
+ const keys=['collab','diagnose','prototype'];
+ resumeEvidenceGrid.innerHTML='';
+ keys.forEach(k=>{const d=EVIDENCE[k],un=evidenceUnlocked.has(k),card=document.createElement('div');card.className='evidence-card '+(un?'unlocked':'locked');card.innerHTML='<span class="locktag">'+(un?'已解鎖':'尚未解鎖')+'</span><div class="num">CLUE '+d.num+'</div><h3>'+d.title+'</h3><p>'+d.summary+'</p><div class="proof">'+(un?d.proof:'完成對應任務後，這段經歷才會出現。')+'</div>';resumeEvidenceGrid.appendChild(card)});
+ if(resumeBtn){resumeBtn.textContent='旅程紀錄';resumeBtn.classList.toggle('complete',evidenceUnlocked.size===3);}
+}
+function unlockEvidence(k,notice=''){if(evidenceUnlocked.has(k))return;const d=EVIDENCE[k];evidenceUnlocked.add(k);renderEvidence();evidencePop.hidden=true;clearTimeout(evidencePopTimer);if(notice)showToast(notice,2400);softPing(740,.18,.014)}
+function openPoster(){posterZoomImg.src=posterDom.querySelector('img').src;posterOverlay.classList.add('show')}
+posterDom.addEventListener('click',openPoster);
+posterZoomImg.style.cursor='pointer';
+posterZoomImg.addEventListener('click',()=>window.open('https://forms.gle/D6L6iTsNw6Epa69bA','_blank','noopener'));
+document.getElementById('closePoster').addEventListener('click',()=>posterOverlay.classList.remove('show'));
+posterOverlay.addEventListener('click',e=>{if(e.target===posterOverlay)posterOverlay.classList.remove('show')});
+if(resumeBtn){resumeBtn.addEventListener('click',()=>{renderEvidence();resumeOverlay.classList.add('show')});}
+document.getElementById('closeResume').addEventListener('click',()=>resumeOverlay.classList.remove('show'));
+resumeOverlay.addEventListener('click',e=>{if(e.target===resumeOverlay)resumeOverlay.classList.remove('show')});
+
+let audioCtx=null,musicOn=false,musicMode='lab';
+function ensureAudio(){if(!audioCtx){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;audioCtx=new AC()}if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}
+function softPing(freq=440,dur=.18,g=.018){const ac=ensureAudio();if(!ac)return;const o=ac.createOscillator(),gn=ac.createGain();o.type='sine';o.frequency.value=freq;gn.gain.setValueAtTime(0.0001,ac.currentTime);gn.gain.exponentialRampToValueAtTime(g,ac.currentTime+.015);gn.gain.exponentialRampToValueAtTime(0.0001,ac.currentTime+dur);o.connect(gn).connect(ac.destination);o.start();o.stop(ac.currentTime+dur+.03)}
+const BGM_URL='https://opengameart.org/sites/default/files/a_small_fire_will_do.wav';
+const bgm=new Audio();bgm.src=BGM_URL;bgm.loop=true;bgm.preload='none';bgm.volume=.18;bgm.playsInline=true;
+function setMusicMode(mode){musicMode=mode;/* single acoustic track; keep pitch natural */}
+async function setMusic(on){
+  if(!on){musicOn=false;bgm.pause();musicBtn.classList.remove('music-loading');musicBtn.textContent='音樂 OFF';musicBtn.setAttribute('aria-pressed','false');return;}
+  musicBtn.classList.add('music-loading');musicBtn.textContent='音樂載入中…';
+  try{
+    bgm.volume=.18;
+    await bgm.play();
+    musicOn=true;musicBtn.classList.remove('music-loading');musicBtn.textContent='音樂 ON';musicBtn.setAttribute('aria-pressed','true');
+    showToast('🎸 BGM ON｜日系溫暖清亮的木吉他和弦',1800);
+  }catch(err){
+    musicOn=false;musicBtn.classList.remove('music-loading');musicBtn.textContent='音樂重試';musicBtn.setAttribute('aria-pressed','false');
+    showToast('音樂需要網路載入；確認網路後再按一次。',3200);
+  }
+}
+musicBtn.addEventListener('click',()=>setMusic(!musicOn));
+const labEntities=[{type:'actor',id:'prof',x:270,y:425,w:122,h:172,label:'侯教授'},{type:'actor',id:'wolf',x:410,y:392,w:84,h:128,label:'大野狼'},{type:'actor',id:'red',x:535,y:448,w:84,h:128,label:'小紅帽'},{type:'actor',id:'snow',x:660,y:405,w:84,h:128,label:'白雪公主'},{type:'actor',id:'peter',x:790,y:438,w:84,h:128,label:'彼得潘'},{type:'poster',id:'ad',x:850,y:190,w:150,h:170,label:'ARG MAKER'},{type:'prop',id:'fridge',x:165,y:280,w:92,h:130,label:'冰箱'},{type:'exit',id:'labExit',x:912,y:374,w:100,h:110,label:'NEXT'}];
+
+const labActorStart={prof:{x:270,y:425},wolf:{x:410,y:392},red:{x:535,y:448},snow:{x:660,y:405},peter:{x:790,y:438}};
+const npcWalk={};
+function resetNpcWalk(){
+  labEntities.forEach(e=>{if(e.type==='actor'){
+    const st=labActorStart[e.id]||{x:e.x,y:e.y};e.x=st.x;e.y=st.y;
+    npcWalk[e.id]={targetX:e.x,targetY:e.y,dir:1,moving:false,waitUntil:performance.now()+600+Math.random()*1100,pauseUntil:0,phase:Math.floor(Math.random()*6)};
+  }});
+}
+function pauseNpc(id,ms=4200){const s=npcWalk[id];if(s){s.pauseUntil=Math.max(s.pauseUntil,performance.now()+ms);s.moving=false;const e=labEntities.find(e=>e.id===id);if(e){s.targetX=e.x;s.targetY=e.y;}}}
+function pickNpcTarget(e,ts){
+  const s=npcWalk[e.id];if(!s)return;
+  const minX=e.id==='prof'?215:300,maxX=e.id==='prof'?390:840;
+  const minY=e.id==='prof'?372:360,maxY=e.id==='prof'?450:458;
+  let tx=e.x,ty=e.y;
+  for(let k=0;k<18;k++){
+    tx=minX+Math.random()*(maxX-minX);ty=minY+Math.random()*(maxY-minY);
+    const tooClose=labEntities.some(o=>o!==e&&o.type==='actor'&&Math.hypot((o.x??0)-tx,(o.y??GROUND)-ty)<75);
+    if(!tooClose)break;
+  }
+  s.targetX=tx;s.targetY=ty;s.dir=tx>=e.x?1:-1;s.waitUntil=0;
+}
+function updateNpcWalk(ts,dt){
+  if(scene!=='lab')return;
+  const intro=document.getElementById('introOverlay');
+  if((intro&&!intro.hidden&&intro.style.display!=='none')||!dialogBox.hidden||document.querySelector('.overlay.show'))return;
+  labEntities.forEach(e=>{if(e.type!=='actor')return;const s=npcWalk[e.id];if(!s)return;
+    if(allyChoice===e.id||(labStarted&&e.id==='prof')){s.moving=false;return;}
+    if(ts<s.pauseUntil||ts<s.waitUntil){s.moving=false;return;}
+    const dx=(s.targetX??e.x)-e.x,dy=(s.targetY??e.y)-e.y,dist=Math.hypot(dx,dy);
+    if(dist<4){s.moving=false;s.waitUntil=ts+700+Math.random()*1800;pickNpcTarget(e,ts);return;}
+    s.dir=Math.abs(dx)>.6?(dx>=0?1:-1):s.dir;s.moving=true;
+    const pxPerMs=e.id==='prof'?0.020:0.027;const step=Math.min(dist,pxPerMs*dt);
+    e.x+=dx/dist*step;e.y+=dy/dist*step;
+    e.x=Math.max(e.id==='prof'?215:300,Math.min(e.id==='prof'?390:840,e.x));
+    e.y=Math.max(e.id==='prof'?372:360,Math.min(e.id==='prof'?450:458,e.y));
+  });
+}
+const forestBase=[{type:'clue',id:'note',x:310,y:350,w:160,h:145,label:'不知道怎麼開始'},{type:'clue',id:'rules',x:520,y:330,w:165,h:145,label:'規則太多'},{type:'clue',id:'phone',x:720,y:300,w:165,h:145,label:'一直落後'},{type:'analysis',id:'analysisBoard',x:480,y:236,w:260,h:110,label:'整理一下'},{type:'exit',id:'forestExit',x:920,y:392,w:96,h:160,label:'往下一關'}];
+const deadlineItems=[{id:'data',label:'資料',emoji:'📊',x:315,y:315,color:'#6ea8db'},{id:'game',label:'可玩的版本',emoji:'🎮',x:425,y:290,color:'#7ec7b0'},{id:'idea',label:'點子',emoji:'💡',x:535,y:315,color:'#f2a45d'},{id:'bug',label:'出錯的地方',emoji:'🐞',x:640,y:290,color:'#eeb6c8'},{id:'meeting',label:'會議',emoji:'🗣️',x:750,y:315,color:'#9db5c7'},{id:'coffee',label:'咖啡',emoji:'☕',x:840,y:285,color:'#c9a47e'}];
+const deadlineFeedbackText={data:'整理現有資料，先看大家卡在哪裡。',game:'先做一版能操作的，明天直接試。',idea:'挑一個最值得試的點子。',bug:'先修最影響操作的錯誤。',meeting:'只開必要會議，把分工說清楚。',coffee:'先補充體力，再回來完成版本。'};
+const allyLines={wolf:{pick:'我負責找捷徑。你負責確認捷徑不是坑。',ability:'移動速度 +20%，但別忘了回頭看細節。'},red:{pick:'可以。先別急著回答，我們先看看哪裡怪怪的。',ability:'線索提示會更明顯。'},snow:{pick:'那我來顧大家的節奏，不要讓任何一個人掉隊。',ability:'每找到一個線索，都會多一個整理提示。'},peter:{pick:'好啊！先別管標準答案，我們去看看能不能從別的地方飛過去。',ability:'跳躍更高，也會出現破框提示。'}};
+function showToast(t,ms=2500){toast.textContent=t;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),ms)}
+function hideDialog(){clearTimeout(dialogHideTimer);dialogHideTimer=null;dialogBox.hidden=true;dialogQueue=[];dialogAfter=null;dialogNext.hidden=true}
+function scheduleDialogHide(ms=4200){clearTimeout(dialogHideTimer);dialogHideTimer=setTimeout(()=>{if(dialogNext.hidden)hideDialog()},ms)}
+function say(name,text,id='jun',queue=[],after=null){clearTimeout(dialogHideTimer);if(name==='系統提示'||id==='system'){hideDialog();showToast(text,3200);if(after)setTimeout(after,3200);return;}dialogBox.hidden=false;dialogBox.classList.remove('nudge');dialogName.textContent=name;dialogText.textContent=text;drawFace(id);dialogQueue=queue.slice();dialogAfter=after;dialogNext.hidden=false;dialogNext.textContent=(dialogQueue.length||dialogAfter)?'繼續 →':'我看完了 →'}
+function nextDialog(){clearTimeout(dialogHideTimer);if(dialogQueue.length){const d=dialogQueue.shift();dialogName.textContent=d.name;dialogText.textContent=d.text;drawFace(d.id||'jun');dialogNext.hidden=false;dialogNext.textContent=(dialogQueue.length||dialogAfter)?'繼續 →':'我看完了 →';return}if(dialogAfter){const cb=dialogAfter;dialogAfter=null;hideDialog();cb();return}hideDialog()}
+dialogNext.addEventListener('click',nextDialog);
+function rr(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
+function circle(x,y,r,fill){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=fill;ctx.fill()}
+function line(x1,y1,x2,y2,w,col){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineWidth=w;ctx.strokeStyle=col;ctx.stroke()}
+function drawGroundShadow(x,footY,w=42,alpha=.2){ctx.save();ctx.globalAlpha=alpha;ctx.fillStyle='#435b6c';ctx.beginPath();ctx.ellipse(x,footY-5,w,9,0,0,Math.PI*2);ctx.fill();ctx.restore()}
+function drawSprite(id,frame,x,footY,h=136,flip=false,targetCtx=ctx){const img=imgs[id];if(!img){targetCtx.save();targetCtx.fillStyle='#dceaf3';targetCtx.beginPath();targetCtx.arc(x,footY-h*.42,h*.25,0,Math.PI*2);targetCtx.fill();targetCtx.restore();return}const cell=img.naturalWidth/4,row=Math.floor(frame/4),col=frame%4,w=h;if(flip){targetCtx.save();targetCtx.translate(x,0);targetCtx.scale(-1,1);targetCtx.drawImage(img,col*cell,row*cell,cell,cell,-w/2,footY-h,w,h);targetCtx.restore()}else targetCtx.drawImage(img,col*cell,row*cell,cell,cell,x-w/2,footY-h,w,h)}
+function drawSpriteTo(c,id,frame,cx,footY,h=72){const img=imgs[id];if(!img)return;const cell=img.naturalWidth/4,row=Math.floor(frame/4),col=frame%4;c.drawImage(img,col*cell,row*cell,cell,cell,cx-h/2,footY-h,h,h)}
+function drawFace(id){
+ fctx.clearRect(0,0,96,96);
+ if(id==='hint'){
+   const g=fctx.createRadialGradient(48,39,4,48,39,34);g.addColorStop(0,'#fff8b8');g.addColorStop(.52,'#ffd85a');g.addColorStop(1,'#f1a93c');
+   fctx.save();fctx.shadowColor='rgba(255,205,72,.65)';fctx.shadowBlur=14;fctx.fillStyle=g;fctx.beginPath();fctx.arc(48,38,25,0,Math.PI*2);fctx.fill();fctx.restore();
+   fctx.strokeStyle='#9f6c28';fctx.lineWidth=4;fctx.beginPath();fctx.moveTo(38,58);fctx.lineTo(58,58);fctx.stroke();
+   fctx.lineWidth=5;fctx.beginPath();fctx.moveTo(40,64);fctx.lineTo(56,64);fctx.stroke();
+   fctx.lineWidth=3;fctx.beginPath();fctx.moveTo(48,14);fctx.lineTo(48,5);fctx.moveTo(24,24);fctx.lineTo(16,18);fctx.moveTo(72,24);fctx.lineTo(80,18);fctx.moveTo(20,45);fctx.lineTo(10,45);fctx.moveTo(76,45);fctx.lineTo(86,45);fctx.strokeStyle='#f4bc3f';fctx.stroke();
+   return;
+ }
+ drawSpriteTo(fctx,id==='system'?'jun':id,0,48,132,132)
+}
+function label(t,x,y){ctx.font='12px sans-serif';const w=Math.max(58,ctx.measureText(t).width+18);rr(x-w/2,y-17,w,23,11,'rgba(255,255,255,.96)','rgba(71,101,125,.08)');ctx.fillStyle='#506f88';ctx.fillText(t,x-ctx.measureText(t).width/2,y)}
+function sky(){const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,'#dff3ff');g.addColorStop(1,'#fbfeff');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);circle(110,95,28,'rgba(255,255,255,.82)');circle(142,100,21,'rgba(255,255,255,.82)');circle(690,82,25,'rgba(255,255,255,.74)')}
+function drawNextOrb(x,y,enabled,ts=0){const im=imgs.nextOrb;if(!im||!im.complete)return;const pulse=enabled?1+.045*Math.sin(ts/420):.88;const size=(enabled?94:74)*pulse;ctx.save();ctx.globalAlpha=enabled?.98:.22;if(!enabled)ctx.filter='grayscale(.75) saturate(.45)';ctx.drawImage(im,x-size/2,y-size/2,size,size);ctx.restore();if(enabled){ctx.save();ctx.globalAlpha=.42+.18*Math.sin(ts/310);circle(x-36,y-34,4,'#fff2aa');circle(x+35,y-22,3,'#fff8d5');ctx.restore();}}
+function drawQuestMarker(x,y,ts=0){const bob=Math.sin(ts/330)*4;ctx.save();ctx.translate(x,y-145+bob);ctx.globalAlpha=.96;ctx.shadowColor='rgba(255,196,88,.7)';ctx.shadowBlur=14;circle(0,0,19,'#fff8df');ctx.shadowBlur=0;ctx.strokeStyle='#efb556';ctx.lineWidth=3;ctx.beginPath();ctx.arc(0,0,19,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#e9a739';ctx.font='900 22px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('!',0,1);ctx.textBaseline='alphabetic';ctx.font='900 12px sans-serif';const label='先找侯教授接任務';const w=ctx.measureText(label).width+24;rr(-w/2,28,w,30,15,'rgba(255,250,238,.97)','#e7c184');ctx.fillStyle='#6b573c';ctx.fillText(label,0,48);ctx.restore();ctx.textAlign='start';}
+
+function drawLab(ts){
+ const bg=imgs.bgLab;if(bg){ctx.drawImage(bg,0,0,W,H)}else{sky();ctx.fillStyle='#eef6fa';ctx.fillRect(0,118,W,GROUND-118)}
+ // gentle common color veil so sprites and backgrounds share the same pastel world.
+ const veil=ctx.createLinearGradient(0,0,0,H);veil.addColorStop(0,'rgba(238,248,252,.05)');veil.addColorStop(.72,'rgba(255,250,242,.03)');veil.addColorStop(1,'rgba(87,101,112,.08)');ctx.fillStyle=veil;ctx.fillRect(0,0,W,H);
+ // subtle floor grounding zone.
+ ctx.save();ctx.globalAlpha=.16;ctx.fillStyle='#496579';ctx.beginPath();ctx.ellipse(565,458,340,23,0,0,Math.PI*2);ctx.fill();ctx.restore();
+ // game-only highlights, kept light so the illustration stays visible.
+ [...labEntities].filter(e=>e.type==='actor').sort((a,b)=>a.y-b.y).forEach(e=>{const s=npcWalk[e.id];const frame=s&&s.moving?frames.walk[Math.floor(ts/180+s.phase)%frames.walk.length]:0;const depth=Math.max(0,Math.min(1,(e.y-360)/(GROUND-360)));const h=106+depth*30;drawGroundShadow(e.x,e.y,32+depth*13,.18+depth*.08);drawSprite(e.id,frame,e.x,e.y,h,!!(s&&s.dir<0));label(e.label,e.x,e.y+3)});
+ if(!labStarted){const prof=labEntities.find(e=>e.id==='prof');if(prof)drawQuestMarker(prof.x,prof.y,ts)}
+ if(labStarted&&!allyChoice){ctx.fillStyle='rgba(242,164,93,.13)';[400,530,660,790].forEach(x=>{ctx.beginPath();ctx.arc(x,GROUND-78,42,0,Math.PI*2);ctx.fill()})}
+ if(allyChoice){const a=labEntities.find(e=>e.id===allyChoice);if(a){ctx.strokeStyle='#f2a45d';ctx.lineWidth=4;ctx.beginPath();ctx.arc(a.x,a.y-58,42,0,Math.PI*2);ctx.stroke()}}
+ // magical NEXT crystal becomes the level exit.
+ drawNextOrb(912,374,!!allyChoice,ts);
+}
+function tree(x,y,s=1){circle(x,y,32*s,'#7fc89b');circle(x-22*s,y+9*s,22*s,'#8bd0a3');circle(x+22*s,y+9*s,21*s,'#8bd0a3');ctx.fillStyle='#9b7a58';ctx.fillRect(x-7*s,y+23*s,14*s,48*s)}
+function sparkle(x,y){ctx.save();ctx.translate(x,y);ctx.fillStyle='#f1c34f';ctx.beginPath();ctx.moveTo(0,-7);ctx.lineTo(2,-2);ctx.lineTo(7,0);ctx.lineTo(2,2);ctx.lineTo(0,7);ctx.lineTo(-2,2);ctx.lineTo(-7,0);ctx.lineTo(-2,-2);ctx.closePath();ctx.fill();ctx.restore()}
+function drawForest(ts){
+ const bg=imgs.bgForest;if(bg){ctx.drawImage(bg,0,0,W,H)}else{sky();ctx.fillStyle='#e7f6e9';ctx.fillRect(0,175,W,GROUND-175)}
+ ctx.fillStyle='rgba(235,249,239,.035)';ctx.fillRect(0,0,W,H);
+ const pulse=.5+.5*Math.sin(ts/360);
+ const clueMarker=(id,x,y,num,title)=>{
+   if(clues.has(id))return;
+   ctx.save();
+   ctx.shadowColor='rgba(255,190,76,.75)';ctx.shadowBlur=18+10*pulse;
+   ctx.globalAlpha=.9;
+   circle(x,y-18,34+4*pulse,'rgba(255,247,218,.90)');
+   ctx.lineWidth=4;ctx.strokeStyle='#f0ae45';ctx.beginPath();ctx.arc(x,y-18,34+4*pulse,0,Math.PI*2);ctx.stroke();
+   ctx.shadowBlur=0;ctx.fillStyle='#8a6538';ctx.font='900 25px sans-serif';ctx.fillText('?',x-7,y-9);
+   rr(x-68,y+24,136,35,17,'rgba(255,255,255,.95)','#efc783');
+   ctx.fillStyle='#5c7082';ctx.font='900 12px sans-serif';const lab=num+' '+title;ctx.fillText(lab,x-ctx.measureText(lab).width/2,y+46);
+   sparkle(x+37,y-48);ctx.restore();
+ };
+ clueMarker('note',310,350,'①','從哪開始？');
+ clueMarker('rules',520,330,'②','規則太多？');
+ clueMarker('phone',720,300,'③','排名往後掉？');
+ drawNextOrb(912,392,forestSolved,ts);
+}
+function drawRun(ts){
+ const bg=imgs.bgRun;if(bg){ctx.drawImage(bg,0,0,W,H)}else{sky();ctx.fillStyle='#f7eee8';ctx.fillRect(0,150,W,GROUND-150)}
+ ctx.fillStyle='rgba(255,248,239,.035)';ctx.fillRect(0,0,W,H);
+ // The shared mission board carries the stage instruction; keep the workshop scene uncluttered.
+ // Interactive choices are paper tags placed over the central worktable.
+ deadlineItems.forEach(it=>{const chosen=deadlineChoices.indexOf(it.id);const y=it.y;ctx.save();ctx.globalAlpha=.96;rr(it.x-38,y-32,76,64,13,chosen>=0?'#fff1dd':'rgba(255,255,255,.94)',chosen>=0?'#efb56b':'#d8e4ea');ctx.fillStyle=it.color;ctx.font='23px sans-serif';ctx.fillText(it.emoji,it.x-12,y-7);ctx.fillStyle='#466a84';ctx.font='bold 11px sans-serif';ctx.fillText(it.label,it.x-ctx.measureText(it.label).width/2,y+19);if(chosen>=0){circle(it.x+25,y-22,12,'#567d9e');ctx.fillStyle='#fff';ctx.font='bold 10px sans-serif';ctx.fillText(String(chosen+1),it.x+22,y-18)}ctx.restore()});
+ drawNextOrb(912,392,deadlineSolved,ts);
+}
+function currentFrame(ts){if(!player.onGround)return player.vy<0?10:11;if(player.moving)return frames.walk[Math.floor(ts/145)%frames.walk.length];if(player.pose==='interact'&&ts-player.poseStarted<650)return frames.interact[Math.floor((ts-player.poseStarted)/325)%2];return 0}
+function drawPlayer(ts){const fy=scene==='lab'?player.y-58:player.y;drawGroundShadow(player.x,fy,40,.24);drawSprite('jun',currentFrame(ts),player.x,fy,144,player.dir<0);label('陳玉君',player.x,fy+3);if(player.targetX!==null){ctx.fillStyle='rgba(74,110,136,.16)';ctx.beginPath();ctx.arc(player.targetX,GROUND-5,10,0,Math.PI*2);ctx.fill()}}
+function drawCompanion(ts){if(!allyChoice||scene==='lab'||scene==='team')return;const offset=player.dir>0?-66:66,x=Math.max(42,Math.min(912,player.x+offset));const frame=player.moving?frames.walk[Math.floor(ts/165)%frames.walk.length]:0;drawGroundShadow(x,player.y,34,.2);drawSprite(allyChoice,frame,x,player.y,118,player.dir<0);if(!player.moving)label(CHAR[allyChoice].name,x,player.y+3)}
+function companionX(){const offset=player.dir>0?-66:66;return Math.max(42,Math.min(912,player.x+offset))}
+function forestCharacterAt(x,y){if(scene!=='forest')return null;const candidates=[];if(x>=player.x-58&&x<=player.x+58&&y>=player.y-150&&y<=player.y+26)candidates.push({id:'jun',d:Math.abs(x-player.x)});if(allyChoice){const ax=companionX();if(x>=ax-54&&x<=ax+54&&y>=player.y-128&&y<=player.y+24)candidates.push({id:allyChoice,d:Math.abs(x-ax)})}candidates.sort((a,b)=>a.d-b.d);return candidates[0]?.id||null}
+const forestTalkLines={
+ jun:['你又戳我～我有在找啦。','等等，我想把剛剛的線索再順一下。','有看到怪怪的地方就跟我說，我來幫你整理。','我們慢慢找，應該還有東西沒注意到。','你一直點我，我會以為我身上藏著線索耶。'],
+ wolf:['卡住沒關係，我可以先陪你繞一圈。只是我走得快，你記得拉我一下。','我會先抓最影響結果的地方，但如果我衝太快，你要提醒我回頭看。'],
+ red:['我看到一些小地方怪怪的。別急，我們一起慢慢找。','有些問題很小，但就是會讓人想離開。我幫你把它們撿回來。'],
+ snow:['不用一次把三個都找完，我們一個一個來。','有人卡住的時候，我會先陪他把話說完，再一起想下一步。'],
+ peter:['找不到就換個方向看看！有時候不是你不會，是路走得太直。','先別怕答錯，換個角度試試看，常常就會看到新的路。']
+};
+function forestCharacterTalk(id){if(id==='jun'){const lines=forestTalkLines.jun;const t=lines[forestJunClicks++%lines.length];say('陳玉君｜遊戲化夢想家',t,'jun');return}const lines=forestTalkLines[id]||['我們一起慢慢找，不急。'];const t=lines[forestAllyClicks++%lines.length];say(CHAR[id].name+'｜'+CHAR[id].role,t,id)}
+const clueReactions={
+ wolf:{note:'嗯，這種「不知道從哪開始」最容易讓人直接離開。先把入口說清楚。',rules:'十二頁？我會先砍掉現在用不到的，只留真的要看的。',phone:'一直往後掉會很挫折。先別比別人，讓人看得到自己的進步。'},
+ red:{note:'我就覺得入口怪怪的！第一步不清楚，後面再精彩也沒用。',rules:'這麼多規則，難怪大家還沒開始就累了。',phone:'看到自己一直掉下去，真的會想關掉。這個情緒要記下來。'},
+ snow:{note:'玉君，這個很關鍵。先讓人知道第一步，才有機會玩下去。',rules:'玉君，這個也記著。一次塞太多，大家真的會跟不上。',phone:'一直落後會很挫折。玉君，我們把這個情緒也留在線索裡。'},
+ peter:{note:'那就把第一步做得像冒險入口一樣明顯！先讓人敢走進去。',rules:'規則太多就先別全看！先玩起來，再需要時補。',phone:'排行榜不一定要一直比別人啊，改看自己的進度也很好玩。'}
+};
+function clueReaction(id){const r=(clueReactions[allyChoice]||{})[id]||'這個問題值得記下來，我們繼續找。';return {name:CHAR[allyChoice].name+'｜'+CHAR[allyChoice].role,text:r,id:allyChoice}}
+function currentEntities(){if(scene==='lab')return labEntities;if(scene==='forest'){return forestBase.filter(e=>e.id!=='analysisBoard')}if(scene==='run')return[...deadlineItems.map(x=>({type:'deadline',id:x.id,x:x.x,y:x.y,w:104,h:94,label:x.label})),{type:'exit',id:'runExit',x:915,y:392,w:96,h:160,label:'NTUST MEG'}];return[]}
+function screenPoint(ev){const r=canvas.getBoundingClientRect();return{x:(ev.clientX-r.left)*W/r.width,y:(ev.clientY-r.top)*H/r.height}}
+function findEntity(x,y){const all=currentEntities().filter(e=>{if(scene==='forest'&&e.type==='clue'&&clues.has(e.id))return false;if(e.type==='actor'){const pad=e.id==='prof'?34:20;return x>=e.x-e.w/2-pad&&x<=e.x+e.w/2+pad&&y>=e.y-e.h-22&&y<=e.y+38}return x>=e.x-e.w/2&&x<=e.x+e.w/2&&y>=e.y-e.h/2&&y<=e.y+e.h/2});const pri={actor:0,analysis:0,exit:1,poster:1,clue:1,deadline:1,prop:3};all.sort((a,b)=>(pri[a.type]??9)-(pri[b.type]??9));return all[0]||null}
+function setTarget(x){player.targetX=Math.max(28,Math.min(925,x))}
+function targetEntity(e){player.interactTarget=e;if(e.type==='actor')pauseNpc(e.id,5200);if(e.type==='exit'){setTarget(Math.min(e.x-18,900));return}const gap=e.type==='actor'?58:34;const stop=e.x+(player.x<=e.x?-gap:gap);setTarget(Math.max(42,Math.min(900,stop)))}
+canvas.addEventListener('click',ev=>{
+ const p=screenPoint(ev);
+ const forestChar=forestCharacterAt(p.x,p.y);if(forestChar){player.targetX=null;player.interactTarget=null;player.moving=false;forestCharacterTalk(forestChar);return;}
+ const e=findEntity(p.x,p.y);
+ if(scene==='run'&&e&&e.type==='deadline'){
+   player.targetX=null;player.interactTarget=null;player.moving=false;
+   if(!runTaskReady){showToast('先看看今天要準備什麼，再開始選喔！',2400);dialogBox.classList.remove('nudge');void dialogBox.offsetWidth;dialogBox.classList.add('nudge');return;}
+   const ov=document.getElementById('deadlineOverlay');
+   if(!ov.classList.contains('show'))openDeadline();
+   chooseDeadline(e.id);
+   return;
+ }
+ e?targetEntity(e):setTarget(p.x)
+});
+canvas.addEventListener('touchstart',ev=>{if(ev.touches.length!==1)return;const t=ev.touches[0],p=screenPoint(t);touchStart={x:t.clientX,y:t.clientY,cx:p.x,cy:p.y};touchMoved=false},{passive:true});
+canvas.addEventListener('touchmove',ev=>{if(!touchStart||ev.touches.length!==1)return;const t=ev.touches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;if(Math.abs(dx)>10||Math.abs(dy)>10)touchMoved=true;if(Math.abs(dx)>18&&Math.abs(dx)>Math.abs(dy))setTarget(player.x+dx*.9)},{passive:true});
+canvas.addEventListener('touchend',ev=>{
+ if(!touchStart)return;
+ const dx=ev.changedTouches[0].clientX-touchStart.x,dy=ev.changedTouches[0].clientY-touchStart.y;
+ if(Math.abs(dy)>42&&Math.abs(dy)>Math.abs(dx)&&dy<0)jump();
+ else if(!touchMoved){
+   const forestChar=forestCharacterAt(touchStart.cx,touchStart.cy);if(forestChar){player.targetX=null;player.interactTarget=null;player.moving=false;forestCharacterTalk(forestChar);touchStart=null;return;}
+   const e=findEntity(touchStart.cx,touchStart.cy);
+   if(scene==='run'&&e&&e.type==='deadline'){
+     player.targetX=null;player.interactTarget=null;player.moving=false;
+     if(!runTaskReady){showToast('先看看今天要準備什麼，再開始選喔！',2400);dialogBox.classList.remove('nudge');void dialogBox.offsetWidth;dialogBox.classList.add('nudge');touchStart=null;return;}
+     const ov=document.getElementById('deadlineOverlay');
+     if(!ov.classList.contains('show'))openDeadline();
+     chooseDeadline(e.id);
+   }else e?targetEntity(e):setTarget(touchStart.cx)
+ }
+ touchStart=null
+},{passive:true});
+function jump(){const max=allyChoice==='peter'?3:2;if(player.jumps<max){player.vy=allyChoice==='peter'?-13:-11.4;player.jumps++;player.onGround=false}}
+function selectAlly(id){allyChoice=id;pauseNpc(id,9999999);clearScaffold();const a=allyLines[id];allyPill.hidden=true;allyPill.textContent='同行｜'+CHAR[id].name;if(missionMain)missionMain.textContent='夥伴已選好：'+CHAR[id].name;missionSub.textContent='右側的 NEXT 水晶球亮了；想換人就再點其他角色。';taskLabel.hidden=true;say(CHAR[id].name+'｜'+CHAR[id].role,a.pick+'　（能力：'+a.ability+'）',id);showToast('已選 '+CHAR[id].name+'。他會跟你一起跑後面的任務。',2600);softPing(659)}
+function autoInteract(e){player.interactTarget=null;player.pose='interact';player.poseStarted=performance.now();if(scene==='lab'){if(e.id==='labExit'){if(!labStarted){showToast('先去找侯教授。');return}if(!allyChoice){showToast('先選一位今天想一起解任務的夥伴。');return}startForest();return}if(e.id==='prof'){profClicks++;if(!labStarted){labStarted=true;taskLabel.hidden=true;if(missionMain)missionMain.textContent='選一位同行夥伴';missionSub.textContent='點角色聊聊，選好後右側的 NEXT 水晶球會亮起來。';say('侯教授','履歷先放著。這裡有個亂七八糟的任務——你會先找誰一起解？','prof');showToast('直接點一位夥伴。選好後，右側的 NEXT 水晶球會亮起來。',3200);armScaffold('labAlly');return}if(profClicks>=3){say('侯教授','你一直點我，是有研究問題，還是只是想確認我會不會換台詞？','prof',[{name:'陳玉君',text:'我就是想選侯老師啊～不可以嗎？都來了，就一起走嘛。',id:'jun'}]);return}say('侯教授',allyChoice?'選好夥伴就出發吧。我比較想看你怎麼做，不想聽你怎麼說。':'我不替你選。點一位夥伴，看看你想先借哪種能力。','prof');return}if(['wolf','red','snow','peter'].includes(e.id)){if(!labStarted){const intros={wolf:'我走捷徑，但不是亂走。',red:'我通常先看大家忽略的小地方。',snow:'我先看誰還沒跟上。',peter:'我會先問：一定要照原本的方法嗎？'};say(CHAR[e.id].name+'｜'+CHAR[e.id].role,intros[e.id],e.id);return}selectAlly(e.id);return}if(e.id==='fridge'){say('研究室冰箱','裡面有三杯喝一半的咖啡。看來有人為了趕進度，忙到連咖啡都沒喝完。','jun');return}if(e.id==='ad'){openPoster();return}}
+if(scene==='forest'){if(e.id==='forestExit'){if(!forestSolved){showToast(clues.size<3?'先找齊 3 個發光線索。':'線索找齊了，先按畫面中央的「整理線索」。');return}startRun();return}const clueText={note:'「我不知道第一步怎麼開始。」',phone:'「排名一直往後掉，我越玩越覺得追不上。」',rules:'「規則太多，看了就累。」'};if(e.type==='clue'&&!clues.has(e.id)){clues.add(e.id);const reaction=clueReaction(e.id);say('找到線索 '+clues.size+'/3',clueText[e.id],'hint',[reaction]);if(clues.size===3){clearScaffold();missionMain.textContent='3 個線索都找到了';missionSub.textContent='把三個線索放在一起看看，找出最需要先處理的問題。';clueAction.hidden=false;showToast('線索找齊了！畫面中央可以整理線索。',2600)}else{armScaffold('forestFind',true)}return}}
+if(scene==='run'){if(!runTaskReady&&e.type==='deadline'){showToast('先看看今天要準備什麼，再開始選喔！',2400);dialogBox.classList.remove('nudge');void dialogBox.offsetWidth;dialogBox.classList.add('nudge');return}if(e.id==='runExit'){if(!deadlineSolved){showToast(deadlineChoices.length<3?'先選三件你要優先做的事。':'先把這 3 件事整理成一個可以試的小版本。');return}openTeam();return}if(e.type==='deadline'){chooseDeadline(e.id);return}}}
+function tryOpenSort(){if(scene==='forest'&&clues.size===3&&!forestSorted){clueAction.hidden=true;openSort()}}
+clueAction.addEventListener('click',tryOpenSort);
+function startForest(){unlockEvidence('collab');showToast('✓ 第 1 關完成：找到適合一起做的人。',2000);scene='forest';syncQuestArt(true);document.getElementById('gameWrap').dataset.scene='forest';setMusicMode('forest');clues.clear();forestSorted=false;forestSolved=false;forestPriority='start';forestJunClicks=0;forestAllyClicks=0;clueAction.hidden=true;resetPlayer(86);hideDialog();missionCard.hidden=false;setMissionTitle('找出大家為什麼玩不下去');missionSub.textContent='在森林裡找到 3 個發光線索，看看大家到底卡在哪裡。';posterDom.hidden=true;allyPill.hidden=true;sceneLabel.textContent='第 2/3 關｜找出問題';taskLabel.hidden=true;armScaffold('forestFind')}
+function openSort(){sortConfirming=false;const sb=document.getElementById('submitSort');if(sb){sb.disabled=false;sb.removeAttribute('aria-disabled');sb.textContent='確認順序，開始處理 →'}buildSortBoard();const partner={wolf:['大野狼｜策略獵人','先選最容易讓人放棄的一個。'],red:['小紅帽｜線索探險家','先選最早讓玩家卡住的一個。'],snow:['白雪公主｜夥伴提醒','先選最影響玩家的一個。'],peter:['彼得潘｜幻想飛行家','先改最卡的地方，玩法可能就不同了。']}[allyChoice]||['同行夥伴','先選最影響玩家的一個。'];document.getElementById('sortPartnerName').textContent=partner[0];document.getElementById('sortPartnerHint').textContent=partner[1];const cv=document.getElementById('sortPartnerFace'),cc=cv&&cv.getContext('2d');if(cc){cc.clearRect(0,0,72,72);drawSpriteTo(cc,allyChoice||'jun',0,36,70,68)}const ov=document.getElementById('sortOverlay');const board=document.getElementById('sortBoard'),partnerBox=ov.querySelector('.sort-partner'),intro=ov.querySelector('.sort-intro'),helper=ov.querySelector('.sort-helper'),title=ov.querySelector('h2'),result=document.getElementById('sortResult'),actions=document.getElementById('sortActions');if(board){board.hidden=false;board.style.display='grid'}if(partnerBox){partnerBox.hidden=false;partnerBox.style.display='grid'}if(intro){intro.hidden=false;intro.style.display=''}if(helper){helper.hidden=false;helper.style.display=''}if(title)title.textContent='一起整理問題';if(result){result.hidden=true;result.style.display='none'}if(actions){actions.hidden=false;actions.style.display='flex'}ov.classList.add('show');armScaffold('sort',true)}
+const sortData={start:{icon:'🧭',title:'不知道第一步怎麼開始',desc:'一進來就不知道要做什麼。'},rules:{icon:'📚',title:'規則太多，看了就累',desc:'還沒開始，就先被說明卡住。'},rank:{icon:'📉',title:'排名一直往後掉',desc:'越玩越追不上，慢慢不想玩了。'}};
+let sortCursor=0;
+function moveSortItem(from,to){
+  if(from<0||to<0||from>=sortOrder.length||to>=sortOrder.length||from===to)return;
+  const item=sortOrder.splice(from,1)[0];sortOrder.splice(to,0,item);sortCursor=to;buildSortBoard();
+  requestAnimationFrame(()=>{const rows=document.querySelectorAll('#sortBoard .sort-card');if(rows[to])rows[to].focus({preventScroll:true})});
+}
+function buildSortBoard(){
+  const b=document.getElementById('sortBoard');b.innerHTML='';
+  sortOrder.forEach((id,i)=>{
+    const d=sortData[id],row=document.createElement('div');
+    row.className='sort-card'+(i===0?' priority':'')+(i===sortCursor?' sort-active':'');
+    row.tabIndex=0;row.dataset.index=i;row.setAttribute('role','group');row.setAttribute('aria-label','第 '+(i+1)+' 順位：'+d.title+'。可用方向鍵或右側按鈕調整順序');
+    row.innerHTML='<div class="sort-num">'+(i+1)+'</div><div><div class="sort-titleline"><span class="sort-icon">'+d.icon+'</span><b>'+d.title+'</b>'+(i===0?'<span class="priority-tag">優先處理</span>':'')+'</div><small>'+d.desc+'</small></div><div class="sort-actions"><button type="button" aria-label="往上移一格">↑</button><button type="button" aria-label="往下移一格">↓</button></div>';
+    const bs=row.querySelectorAll('button');bs[0].disabled=i===0;bs[1].disabled=i===sortOrder.length-1;
+    bs[0].addEventListener('click',e=>{e.preventDefault();e.stopPropagation();moveSortItem(i,i-1)});
+    bs[1].addEventListener('click',e=>{e.preventDefault();e.stopPropagation();moveSortItem(i,i+1)});
+    row.addEventListener('focus',()=>{sortCursor=i;document.querySelectorAll('#sortBoard .sort-card').forEach((el,j)=>el.classList.toggle('sort-active',j===i))});
+    row.addEventListener('click',e=>{if(e.target.closest('button'))return;sortCursor=i;row.focus({preventScroll:true})});
+    row.addEventListener('keydown',e=>{
+      if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();moveSortItem(i,i-1)}
+      else if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();moveSortItem(i,i+1)}
+    });
+    let sy=0,sx=0;
+    row.addEventListener('touchstart',e=>{if(e.touches.length!==1)return;sy=e.touches[0].clientY;sx=e.touches[0].clientX},{passive:true});
+    row.addEventListener('touchend',e=>{const t=e.changedTouches&&e.changedTouches[0];if(!t)return;const dy=t.clientY-sy,dx=t.clientX-sx;if(Math.abs(dy)>38&&Math.abs(dy)>Math.abs(dx)){moveSortItem(i,i+(dy<0?-1:1))}},{passive:true});
+    b.appendChild(row)
+  })
+}
+let sortConfirming=false;
+function confirmSortFlow(ev){
+  if(ev){ev.preventDefault?.();ev.stopPropagation?.();}
+  if(sortConfirming)return false;
+  sortConfirming=true;
+  clearScaffold();
+  forestSorted=true;
+  forestPriority=sortOrder[0];
+  const explain={start:'第一步不清楚，玩家很容易直接停下來。',rules:'說明太多，玩家還沒開始就先累了。',rank:'一直落後，會讓玩家越玩越挫折。'}[forestPriority];
+  const next={start:'入口直接告訴玩家「第一步要做什麼」，再請人試一次。',rules:'先留下三個必要提示，再請人試一次。',rank:'先改成看自己的進度，再請人試一次。'}[forestPriority];
+  const ov=document.getElementById('sortOverlay');
+  const board=document.getElementById('sortBoard');
+  const partnerBox=ov?.querySelector('.sort-partner');
+  const intro=ov?.querySelector('.sort-intro');
+  const helper=ov?.querySelector('.sort-helper');
+  const title=ov?.querySelector('h2');
+  const actions=document.getElementById('sortActions');
+  const result=document.getElementById('sortResult');
+  const feedback=document.getElementById('sortFeedback');
+  const btn=document.getElementById('submitSort');
+  if(btn){btn.textContent='已確認 ✓';btn.disabled=true;btn.setAttribute('aria-disabled','true');}
+  if(board){board.hidden=true;board.style.setProperty('display','none','important');}
+  if(partnerBox){partnerBox.hidden=true;partnerBox.style.setProperty('display','none','important');}
+  if(intro){intro.hidden=true;intro.style.setProperty('display','none','important');}
+  if(helper){helper.hidden=true;helper.style.setProperty('display','none','important');}
+  if(title)title.textContent='問題整理好了';
+  if(feedback)feedback.innerHTML='<b>先處理這個：</b>'+explain+'<br><br><b>下一步：</b>'+next;
+  if(actions){actions.hidden=true;actions.style.setProperty('display','none','important');}
+  if(result){result.hidden=false;result.style.setProperty('display','block','important');}
+  const nextBtn=document.getElementById('gamefulSkillBtn');
+  if(nextBtn){nextBtn.textContent='我知道了，繼續 →';nextBtn.disabled=false;nextBtn.style.setProperty('pointer-events','auto','important');setTimeout(()=>nextBtn.focus?.(),0);}
+  if(ov)ov.scrollTop=0;
+  softPing(720,.16,.014);
+  return false;
+}
+function continueSortFlow(ev){
+  if(ev){ev.preventDefault?.();ev.stopPropagation?.();}
+  clearScaffold();forestSolved=true;unlockEvidence('diagnose');
+  document.getElementById('sortOverlay')?.classList.remove('show');
+  missionCard.hidden=true;allyPill.hidden=true;taskLabel.classList.remove('is-action');taskLabel.hidden=true;
+  const msg={start:'先把第一步說清楚，讓玩家一進來就知道現在要做什麼，再試一次。',rules:'先把很多規則變成幾個看得懂的提示，讓人先玩得下去，再慢慢補細節。',rank:'先把「跟別人比名次」改成「看自己的進度」，讓大家先看到自己有進步。'}[forestPriority];
+  say('陳玉君',msg+' 右邊的 NEXT 已經亮了。','jun');
+  return false;
+}
+window.confirmSortFlow=confirmSortFlow;
+window.continueSortFlow=continueSortFlow;
+const submitSortBtn=document.getElementById('submitSort');
+if(submitSortBtn){
+  submitSortBtn.onclick=confirmSortFlow;
+  submitSortBtn.addEventListener('pointerup',confirmSortFlow,{passive:false});
+  submitSortBtn.addEventListener('touchend',confirmSortFlow,{passive:false});
+  submitSortBtn.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){confirmSortFlow(e)}});
+}
+const gamefulContinueBtn=document.getElementById('gamefulSkillBtn');
+if(gamefulContinueBtn){
+  gamefulContinueBtn.onclick=continueSortFlow;
+  gamefulContinueBtn.addEventListener('pointerup',continueSortFlow,{passive:false});
+  gamefulContinueBtn.addEventListener('touchend',continueSortFlow,{passive:false});
+}
+
+function startRun(){scene='run';syncQuestArt(true);document.getElementById('gameWrap').dataset.scene='run';setMusicMode('run');deadlineChoices=[];deadlineSolved=false;runTaskReady=false;clueAction.hidden=true;buildDeadline();document.getElementById('deadlineFeedback').innerHTML='';document.getElementById('deadlineFinishBtn').disabled=true;document.getElementById('deadlineProgress').textContent='已選 0 / 3';resetPlayer(86);missionCard.hidden=false;setMissionTitle('試過之後，再想辦法變得更好');missionSub.textContent='明天下午就要試玩，先決定最重要的 3 件事。';allyPill.hidden=true;sceneLabel.textContent='第 3/3 關｜試過再優化';taskLabel.hidden=true;say('侯教授','明天下午就要試玩了。你會先準備哪三件事？','prof',[{name:'陳玉君',text:'先抓最重要的三件，把能試的版本準備出來。',id:'jun'}],()=>{runTaskReady=true;openDeadline()})}
+function openDeadline(){if(!runTaskReady)return;buildDeadline();document.getElementById('deadlineFeedback').innerHTML='';document.getElementById('deadlineProgress').textContent='已選 '+deadlineChoices.length+' / 3';const finish=document.getElementById('deadlineFinishBtn');finish.disabled=deadlineChoices.length!==3;finish.textContent=deadlineChoices.length===3?'用這 3 件事準備試玩版本 →':'選好 3 件後繼續 →';document.getElementById('deadlineOverlay').classList.add('show');armScaffold('deadline',true)}
+function buildDeadline(){const grid=document.getElementById('deadlineGrid');grid.innerHTML='';deadlineItems.forEach(it=>{const b=document.createElement('button');b.type='button';b.className='deadline-card'+(deadlineChoices.includes(it.id)?' selected':'');const order=deadlineChoices.indexOf(it.id);b.innerHTML=(order>=0?'<span class="order">'+(order+1)+'</span>':'')+'<div class="emoji">'+it.emoji+'</div><b>'+it.label+'</b><small>'+deadlineFeedbackText[it.id]+'</small>';b.disabled=deadlineChoices.length>=3&&!deadlineChoices.includes(it.id);b.onclick=()=>chooseDeadline(it.id);grid.appendChild(b)})}
+function chooseDeadline(id){if(deadlineSolved)return;clearScaffold();if(deadlineChoices.includes(id)){deadlineChoices=deadlineChoices.filter(x=>x!==id)}else if(deadlineChoices.length<3){deadlineChoices.push(id);showToast(deadlineFeedbackText[id],1700);if(musicOn)softPing(587)}buildDeadline();document.getElementById('deadlineProgress').textContent='已選 '+deadlineChoices.length+' / 3';const list=document.getElementById('deadlineFeedback'),finish=document.getElementById('deadlineFinishBtn');list.innerHTML='';finish.disabled=deadlineChoices.length!==3;finish.textContent=deadlineChoices.length===3?'用這 3 件事準備試玩版本 →':'選好 3 件後繼續 →';if(deadlineChoices.length===3){const picked=deadlineChoices.map(x=>deadlineItems.find(z=>z.id===x).label).join('、');const hint=document.createElement('div');hint.className='feedback-item compact-summary';hint.innerHTML='<b>你選了：</b>'+picked+'<span>　可以再點一次取消重選。</span>';list.appendChild(hint)}else{armScaffold('deadline',true)}}
+function demoFromChoices(){const picked=deadlineChoices.map(x=>deadlineItems.find(z=>z.id===x).label);let demo='流程草圖版',note='先把選到的工作壓成一條可走的流程。';if(deadlineChoices.includes('game')){demo='可互動版本';note='你有先做「可玩的版本」，所以明天至少有一個真的能操作的版本。'}else if(deadlineChoices.includes('idea')){demo='紙上互動版';note='你有「點子」，就先把它畫成可以看、可以試的紙上／線框版本。'}else if(deadlineChoices.includes('data')){demo='資料故事板';note='你有「資料」，就先把資料整理成一條看得懂、能討論的故事線。'}else if(deadlineChoices.includes('bug')){demo='修正版流程';note='你先處理「出錯的地方」，就把最影響體驗的錯誤修掉，再用簡化流程展示。'}const support=deadlineChoices.filter(x=>['meeting','coffee'].includes(x));if(support.length){note+=' '+support.map(x=>x==='meeting'?'會議只留必要共識':'咖啡當補給，不把它算成產出').join('；')+'。'}const partner={wolf:' 大野狼幫你把支線砍掉，只留明天要展示的核心。',red:' 小紅帽幫你補上一個「要驗證什麼」的觀察點。',snow:' 白雪公主把需要討論的事收斂成一張共識清單。',peter:' 彼得潘把最有趣的點子推成一個可以立刻試的變化。'}[allyChoice]||'';note+=partner;return{picked,demo,note}}
+function summaryFromDeadlineChoices(){
+ const actionText={
+  data:'整理資料、看清楚狀況',
+  game:'做出可以操作的版本',
+  idea:'挑一個值得試的點子',
+  bug:'修掉最影響體驗的問題',
+  meeting:'和大家確認分工',
+  coffee:'補充一下體力'
+ };
+ const steps=deadlineChoices.map(id=>actionText[id]).filter(Boolean);
+ if(steps.length!==3)return '先抓重點，再一步一步準備。';
+ return '先'+steps[0]+'，再'+steps[1]+'，最後'+steps[2]+'。';
+}
+document.getElementById('deadlineFinishBtn').onclick=()=>{if(deadlineChoices.length!==3)return;clearScaffold();const r=demoFromChoices();document.getElementById('deadlineOverlay').classList.remove('show');const picked=document.getElementById('stage3Picked');picked.innerHTML=r.picked.map((x,i)=>'<span class="picked-chip">'+(i+1)+'. '+x+'</span>').join('');document.getElementById('stage3Summary').innerHTML='<b>你的做法：</b>'+summaryFromDeadlineChoices();stage3ResultOverlay.classList.add('show')};
+document.getElementById('stage3ResultClose').onclick=()=>{stage3ResultOverlay.classList.remove('show');deadlineSolved=true;unlockEvidence('prototype');showToast('✓ 第 3 關完成：準備好可以試的版本。',2600)};
+function openTeam(){scene='team';clueAction.hidden=true;if(stagePlaqueArt)stagePlaqueArt.hidden=true;setMusicMode('lab');sceneLabel.textContent='FINAL｜研究小隊';taskLabel.hidden=true;buildTeam();document.getElementById('teamOverlay').classList.add('show');armScaffold('team',true)}
+function buildTeam(){const grid=document.getElementById('teamGrid'),confirm=document.getElementById('confirmTeam'),count=document.getElementById('teamCount');grid.innerHTML='';selected=[];confirm.disabled=true;count.textContent='已選 0 / 3';['wolf','red','snow','peter','jun'].forEach(id=>{const b=document.createElement('button');b.className='team-card';b.type='button';const art=document.createElement('div');art.className='team-art';const cv=document.createElement('canvas');cv.width=76;cv.height=76;art.appendChild(cv);drawSpriteTo(cv.getContext('2d'),id,0,38,74,72);b.appendChild(art);b.insertAdjacentHTML('beforeend','<strong>'+CHAR[id].name+'</strong><small>'+CHAR[id].role+'</small>');b.onclick=()=>{if(selected.includes(id)){selected=selected.filter(x=>x!==id);b.classList.remove('selected')}else if(selected.length<3){selected.push(id);b.classList.add('selected')}confirm.disabled=selected.length!==3;count.textContent='已選 '+selected.length+' / 3'};grid.appendChild(b)})}
+function radarScores(ids){
+ const score={problem:1.2,team:1.2,breakdown:1.2,prototype:1.2,ideas:1.2};
+ const add={
+  wolf:{problem:.6,team:.3,breakdown:1.8,prototype:.5,ideas:.3},
+  red:{problem:2.0,team:.7,breakdown:.4,prototype:.4,ideas:.7},
+  snow:{problem:.5,team:2.0,breakdown:1.0,prototype:.3,ideas:.4},
+  peter:{problem:.3,team:.3,breakdown:.5,prototype:1.0,ideas:2.0},
+  jun:{problem:1.6,team:1.4,breakdown:1.8,prototype:2.0,ideas:1.1}
+ };
+ ids.forEach(id=>{const a=add[id]||{};Object.keys(score).forEach(k=>score[k]=Math.min(5,score[k]+(a[k]||0)))});
+ return score;
+}
+function renderRadar(ids){
+ const s=radarScores(ids),labels=[['找問題','problem'],['找夥伴','team'],['拆任務','breakdown'],['做一版','prototype'],['想新招','ideas']],cx=180,cy=155,R=103;
+ const pt=(i,r)=>{const a=-Math.PI/2+i*Math.PI*2/5;return[cx+Math.cos(a)*r,cy+Math.sin(a)*r]};
+ let grid='';for(let lv=1;lv<=5;lv++){const ps=labels.map((_,i)=>pt(i,R*lv/5).join(',')).join(' ');grid+='<polygon points="'+ps+'" fill="none" stroke="#d9e6ed" stroke-width="1"/>'}
+ let axes='';labels.forEach((l,i)=>{const p=pt(i,R),q=pt(i,R+28);axes+='<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0]+'" y2="'+p[1]+'" stroke="#d6e3ea"/><text x="'+q[0]+'" y="'+q[1]+'" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="800" fill="#4d6e86">'+l[0]+'</text>'});
+ const poly=labels.map((l,i)=>pt(i,R*s[l[1]]/5).join(',')).join(' ');
+ let dots='';labels.forEach((l,i)=>{const p=pt(i,R*s[l[1]]/5);dots+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="4" fill="#f2a45d" stroke="#fff" stroke-width="2"/>'});
+ document.getElementById('radarChart').innerHTML='<svg viewBox="0 0 360 310" role="img" aria-label="研究小隊戰力雷達圖">'+grid+axes+'<polygon points="'+poly+'" fill="rgba(110,168,219,.28)" stroke="#5f91b7" stroke-width="3"/>'+dots+'<circle cx="'+cx+'" cy="'+cy+'" r="4" fill="#5f91b7"/></svg>';
+}
+function finishTeam(){
+ clearScaffold();softPing(784,.24,.02);const names=selected.map(id=>CHAR[id].name);
+ document.getElementById('teamOverlay').classList.remove('show');
+ document.getElementById('endPage1').hidden=false;document.getElementById('endPage2').hidden=true;
+ document.getElementById('endTitle').textContent='你的研究戰力圖';
+ document.getElementById('endTeam').innerHTML='你組成：<b>'+names.join(' × ')+'</b>';
+ renderRadar(selected);
+ const scores=radarScores(selected),meta={problem:['🔍','找問題','先弄清楚真正卡住的地方。'],team:['🤝','找夥伴','讓不同的人一起把事情完成。'],breakdown:['🧩','拆任務','把大問題切成能開始的小步驟。'],prototype:['🚀','做一版','先做出能試的版本，再慢慢改。'],ideas:['✨','想新招','用不同角度找新的可能。']};
+ const top=Object.keys(scores).sort((a,b)=>scores[b]-scores[a]).slice(0,3);
+ document.getElementById('endStrengths').innerHTML=top.map(k=>'<div class="strength-card"><span class="ico">'+meta[k][0]+'</span><div><b>'+meta[k][1]+'</b><small>'+meta[k][2]+'</small></div></div>').join('');
+ document.getElementById('radarNote').hidden=true;document.getElementById('radarHelpBtn').setAttribute('aria-expanded','false');
+ document.getElementById('endOverlay').classList.add('show');
+}
+document.getElementById('confirmTeam').onclick=finishTeam;
+document.getElementById('radarHelpBtn').onclick=()=>{const n=document.getElementById('radarNote'),b=document.getElementById('radarHelpBtn');n.hidden=!n.hidden;b.setAttribute('aria-expanded',String(!n.hidden));b.textContent=n.hidden?'？ 怎麼看':'收起說明'};
+document.getElementById('endNextBtn').onclick=()=>{document.getElementById('endPage1').hidden=true;document.getElementById('endPage2').hidden=false};
+document.getElementById('endBackBtn').onclick=()=>{document.getElementById('endPage2').hidden=true;document.getElementById('endPage1').hidden=false};
+function resetPlayer(x=82){Object.assign(player,{x,y:GROUND,vy:0,dir:1,targetX:null,interactTarget:null,jumps:0,onGround:true,moving:false,pose:'idle',poseStarted:performance.now()})}
+function update(ts,dt){if(scene==='team')return;updateNpcWalk(ts,dt);if(player.targetX!==null){const dx=player.targetX-player.x;if(Math.abs(dx)>3){player.moving=true;player.pose='walk';player.dir=dx>0?1:-1;const speed=allyChoice==='wolf'?5.4:4.6;player.x+=Math.sign(dx)*Math.min(player.onGround?speed:3.4,Math.abs(dx))}else{player.x=player.targetX;player.moving=false;player.pose='idle';player.targetX=null;if(player.interactTarget)autoInteract(player.interactTarget)}}else player.moving=false;player.vy+=0.62;player.y+=player.vy;if(player.y>=GROUND){player.y=GROUND;player.vy=0;player.onGround=true;player.jumps=0}else player.onGround=false;player.x=Math.max(28,Math.min(925,player.x))}
+function render(ts){ctx.clearRect(0,0,W,H);if(scene==='lab')drawLab(ts);else if(scene==='forest')drawForest(ts);else if(scene==='run')drawRun(ts);if(scene!=='team'){drawCompanion(ts);drawPlayer(ts)}}
+let lastRenderTs=0;function loop(ts){syncQuestArt();gameWrap.dataset.scene=scene;gameWrap.dataset.solved=(scene==='forest'?forestSolved:(scene==='run'?deadlineSolved:false));requestAnimationFrame(loop);if(ts-lastRenderTs<32)return;const dt=Math.min(50,ts-lastRenderTs||33);lastRenderTs=ts;lastTs=ts;update(ts,dt);render(ts)}
+function initCharList(){const charList=document.getElementById('charList');charList.innerHTML='';CHAR_INFO.forEach(([id,title,desc])=>{const item=document.createElement('div');item.className='char';const art=document.createElement('div');art.className='char-art';const cv=document.createElement('canvas');cv.width=58;cv.height=58;art.appendChild(cv);setTimeout(()=>drawSpriteTo(cv.getContext('2d'),id,0,29,56,54),100);item.appendChild(art);const body=document.createElement('div');body.innerHTML='<b>'+title+'</b><small>'+desc+'</small>';item.appendChild(body);charList.appendChild(item)})}
+function resetGame(){clearScaffold();scene='lab';syncQuestArt(true);document.getElementById('gameWrap').dataset.scene='lab';setMusicMode('lab');labStarted=false;allyChoice=null;profClicks=0;clues.clear();forestSorted=false;forestSolved=false;forestPriority='start';sortOrder=['start','rules','rank'];forestJunClicks=0;forestAllyClicks=0;deadlineChoices=[];deadlineSolved=false;runTaskReady=false;selected=[];clueAction.hidden=true;evidenceUnlocked.clear();renderEvidence();evidencePop.hidden=true;clearTimeout(evidencePopTimer);resetNpcWalk();resetPlayer();missionCard.hidden=false;posterDom.hidden=false;allyPill.hidden=true;setMissionTitle('研究小隊集結中');missionSub.textContent='先認識大家，再選一位夥伴一起出發。';sceneLabel.textContent='第 1/3 關｜找誰一起出發？';taskLabel.textContent='';taskLabel.hidden=true;['sortOverlay','deadlineOverlay','stage3ResultOverlay','teamOverlay','endOverlay','resumeOverlay','posterOverlay'].forEach(id=>document.getElementById(id).classList.remove('show'));document.getElementById('endPage1').hidden=false;document.getElementById('endPage2').hidden=true;hideDialog();if(typeof introOverlay==='undefined'||!introOverlay||introOverlay.hidden||introOverlay.style.display==='none'){setTimeout(()=>showScaffoldHint('先找侯教授接任務。研究室裡也藏了幾個可以亂點的小彩蛋。'),180);}armScaffold('labStart')}
+const introOverlay=document.getElementById('introOverlay');const startExperience=document.getElementById('startExperience');if(startExperience){startExperience.addEventListener('click',()=>{hideDialog();if(introOverlay){introOverlay.hidden=true;introOverlay.style.display='none';}resetGame();resetPlayer(82);taskLabel.hidden=true;});}
+document.getElementById('helpBtn').onclick=()=>document.getElementById('helpOverlay').classList.add('show');document.getElementById('closeHelp').onclick=()=>document.getElementById('helpOverlay').classList.remove('show');document.getElementById('restartBtn').onclick=resetGame;document.getElementById('againBtn').onclick=resetGame;
+initCharList();requestAnimationFrame(loop);try{resetGame()}catch(err){console.error('Game init recovery:',err);scene='lab';resetPlayer(82);missionCard.hidden=false;posterDom.hidden=false;sceneLabel.textContent='第 1/3 關｜找夥伴';taskLabel.hidden=true;}
+
+})();
+</script>
+<style id="v45-sort-panel-restore">
+#sortOverlay{background:rgba(24,34,43,.58)!important;backdrop-filter:blur(4px)!important;padding:18px!important;align-items:center!important;justify-content:center!important;overflow-y:auto!important}
+#sortOverlay .sort-modal{position:relative!important;width:min(820px,calc(100vw - 36px))!important;max-height:none!important;overflow:visible!important;padding:24px 28px 22px!important;border-radius:28px!important;border:2px solid #d7a45e!important;outline:4px solid rgba(255,250,238,.88)!important;background:radial-gradient(circle at 92% 10%,rgba(238,189,99,.10),transparent 22%),linear-gradient(180deg,#fffdf7 0%,#fff7e9 100%)!important;box-shadow:0 24px 64px rgba(21,31,39,.34),inset 0 0 0 1px rgba(255,255,255,.95)!important;color:#31566f!important}
+#sortOverlay .sort-modal:before{content:''!important;position:absolute!important;inset:8px!important;border:1px solid rgba(85,126,157,.20)!important;border-radius:20px!important;pointer-events:none!important}
+#sortOverlay .sort-modal:after{content:'✦'!important;position:absolute!important;right:23px!important;top:20px!important;color:#e6a34c!important;font-size:22px!important;text-shadow:0 3px 10px rgba(221,153,67,.18)!important}
+#sortOverlay .quest-ribbon{display:inline-flex!important;margin:0 0 10px!important;padding:6px 13px!important;border-radius:999px!important;border:1px solid #d6ad69!important;background:linear-gradient(180deg,#537fa1,#365f82)!important;color:#fff!important;font-size:12px!important;font-weight:950!important;letter-spacing:.05em!important;box-shadow:0 4px 10px rgba(55,88,113,.16)!important}
+#sortOverlay .quest-head{margin:0!important;padding-right:30px!important}
+#sortOverlay .quest-head h2{font-size:28px!important;color:#315d7d!important;margin:0 0 4px!important}
+#sortOverlay .sort-intro{font-size:14px!important;line-height:1.55!important;color:#61788a!important}
+#sortOverlay .sort-helper{font-size:12px!important;color:#8a7965!important;margin-top:2px!important}
+#sortOverlay .quest-spark{display:none!important}
+#sortOverlay .sort-partner{margin-top:14px!important;padding:10px 13px!important;border-radius:17px!important;border:1px solid #e2c38d!important;background:linear-gradient(180deg,#fff8e9,#fffdf7)!important;box-shadow:none!important}
+#sortOverlay .sort-partner-face{width:52px!important;height:52px!important;border:1.5px solid #d8b875!important;background:#eef7fd!important}
+#sortOverlay .sort-partner b{font-size:14px!important;color:#765b36!important}
+#sortOverlay .sort-partner p{font-size:14px!important;line-height:1.45!important;color:#506a7f!important;font-weight:800!important}
+#sortOverlay .choice-board{gap:9px!important;margin-top:12px!important}
+#sortOverlay .sort-card{min-height:66px!important;padding:9px 12px!important;border-radius:17px!important;border:1.5px solid #d3e1e9!important;background:#fff!important;box-shadow:0 4px 10px rgba(61,84,101,.05)!important}
+#sortOverlay .sort-card.priority{border-color:#eea454!important;background:#fff1dc!important;box-shadow:0 5px 12px rgba(216,151,75,.12)!important}
+#sortOverlay .sort-card b{font-size:16px!important;color:#365f7e!important}
+#sortOverlay .sort-card small{font-size:13px!important;line-height:1.38!important;color:#718394!important}
+#sortOverlay .sort-num{width:34px!important;height:34px!important;font-size:13px!important}
+#sortOverlay .sort-actions button{width:40px!important;height:40px!important;font-size:19px!important;border-radius:12px!important;background:#fffdf9!important;border:1px solid #cbdbe5!important;color:#52728a!important}
+#sortOverlay .sort-actions button:not(:disabled):hover{background:#eef7fd!important;border-color:#a7c4d6!important}
+#sortOverlay .sort-modal .actions-row{margin-top:13px!important}
+#sortOverlay .sort-modal .primary{padding:10px 18px!important;border-radius:14px!important;background:linear-gradient(180deg,#668ead,#4c7596)!important;border:1px solid #456d8b!important;color:#fff!important}
+#sortOverlay .skill-box{margin-top:11px!important;padding:14px 16px!important;border-radius:16px!important;background:#fff8ea!important;border:1px solid #e3c38f!important;color:#655843!important;font-size:15px!important;line-height:1.6!important}
+@media(max-width:720px){#sortOverlay{align-items:flex-start!important;padding:10px!important}#sortOverlay .sort-modal{width:100%!important;padding:18px 15px 16px!important;border-radius:22px!important}#sortOverlay .quest-head h2{font-size:23px!important}#sortOverlay .sort-partner{grid-template-columns:46px 1fr!important}#sortOverlay .sort-partner-face{width:44px!important;height:44px!important}#sortOverlay .sort-card{grid-template-columns:34px minmax(0,1fr) auto!important;padding:8px 9px!important}#sortOverlay .sort-card b{font-size:14px!important}#sortOverlay .sort-card small{font-size:11.5px!important}#sortOverlay .sort-actions button{width:34px!important;height:34px!important;font-size:17px!important}}
+</style>
+
+<style id="v46-stage3-task-restore">
+/* V46: Third-stage choice board returns to a solid game-panel style.
+   No generated frame image, no glass transparency, no internal scrollbar. */
+#deadlineOverlay{
+  background:rgba(24,34,43,.60)!important;
+  backdrop-filter:blur(4px)!important;
+  padding:18px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow-y:auto!important;
+  scrollbar-width:none!important;
+}
+#deadlineOverlay::-webkit-scrollbar{display:none!important}
+#deadlineOverlay .deadline-modal{
+  position:relative!important;
+  width:min(860px,calc(100vw - 36px))!important;
+  max-height:none!important;
+  overflow:visible!important;
+  padding:24px 28px 22px!important;
+  border-radius:28px!important;
+  border:2px solid #d7a45e!important;
+  outline:4px solid rgba(255,250,238,.88)!important;
+  background:
+    radial-gradient(circle at 92% 10%,rgba(238,189,99,.10),transparent 22%),
+    linear-gradient(180deg,#fffdf7 0%,#fff7e9 100%)!important;
+  box-shadow:0 24px 64px rgba(21,31,39,.34),inset 0 0 0 1px rgba(255,255,255,.95)!important;
+  color:#31566f!important;
+}
+#deadlineOverlay .deadline-modal:before{
+  content:''!important;
+  position:absolute!important;
+  inset:8px!important;
+  border:1px solid rgba(85,126,157,.20)!important;
+  border-radius:20px!important;
+  pointer-events:none!important;
+}
+#deadlineOverlay .deadline-modal:after{
+  content:'✦'!important;
+  position:absolute!important;
+  right:23px!important;
+  top:20px!important;
+  color:#e6a34c!important;
+  font-size:22px!important;
+  text-shadow:0 3px 10px rgba(221,153,67,.18)!important;
+  pointer-events:none!important;
+}
+#deadlineOverlay .quest-ribbon{
+  display:inline-flex!important;
+  margin:0 0 10px!important;
+  padding:6px 13px!important;
+  border-radius:999px!important;
+  border:1px solid #d6ad69!important;
+  background:linear-gradient(180deg,#537fa1,#365f82)!important;
+  color:#fff!important;
+  font-size:12px!important;
+  font-weight:950!important;
+  letter-spacing:.05em!important;
+  box-shadow:0 4px 10px rgba(55,88,113,.16)!important;
+}
+#deadlineOverlay .quest-head{margin:0!important;padding-right:34px!important}
+#deadlineOverlay .quest-head h2{
+  margin:0 0 5px!important;
+  color:#315d7d!important;
+  font-size:28px!important;
+  line-height:1.25!important;
+}
+#deadlineOverlay .deadline-intro{
+  margin:0!important;
+  color:#61788a!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+}
+#deadlineOverlay .quest-spark{display:none!important}
+#deadlineOverlay .deadline-progress{
+  margin-top:13px!important;
+  padding:6px 12px!important;
+  border-radius:999px!important;
+  background:#fff1d7!important;
+  border:1px solid #dfb978!important;
+  color:#765a35!important;
+  font-size:13px!important;
+  font-weight:950!important;
+}
+#deadlineOverlay .deadline-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin-top:13px!important;
+}
+#deadlineOverlay .deadline-card{
+  min-height:105px!important;
+  padding:12px 14px!important;
+  border-radius:18px!important;
+  border:1.5px solid #d3e1e9!important;
+  background:#fff!important;
+  color:#365f7e!important;
+  box-shadow:0 4px 10px rgba(61,84,101,.05)!important;
+  transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease!important;
+}
+#deadlineOverlay .deadline-card:hover{
+  transform:translateY(-1px)!important;
+  border-color:#b8cdd9!important;
+}
+#deadlineOverlay .deadline-card.selected{
+  border-color:#eea454!important;
+  background:#fff1dc!important;
+  box-shadow:0 5px 12px rgba(216,151,75,.12)!important;
+}
+#deadlineOverlay .deadline-card .emoji{font-size:24px!important;margin-bottom:5px!important}
+#deadlineOverlay .deadline-card b{
+  display:block!important;
+  margin-bottom:4px!important;
+  color:#365f7e!important;
+  font-size:16px!important;
+  line-height:1.35!important;
+}
+#deadlineOverlay .deadline-card small{
+  display:block!important;
+  color:#718394!important;
+  font-size:13px!important;
+  line-height:1.42!important;
+}
+#deadlineOverlay .deadline-card .order{
+  width:25px!important;height:25px!important;
+  background:#537fa1!important;
+  color:#fff!important;
+}
+#deadlineOverlay .feedback-list{margin-top:9px!important}
+#deadlineOverlay .feedback-item.compact-summary{
+  padding:10px 13px!important;
+  border-radius:14px!important;
+  background:#fff8ea!important;
+  border:1px solid #e3c38f!important;
+  color:#655843!important;
+  font-size:13px!important;
+  line-height:1.5!important;
+}
+#deadlineOverlay .deadline-actions{margin-top:13px!important}
+#deadlineOverlay #deadlineFinishBtn{
+  padding:10px 18px!important;
+  border-radius:14px!important;
+  background:linear-gradient(180deg,#668ead,#4c7596)!important;
+  border:1px solid #456d8b!important;
+  color:#fff!important;
+  font-size:14px!important;
+  font-weight:950!important;
+  box-shadow:0 6px 14px rgba(61,95,122,.18)!important;
+}
+#deadlineOverlay #deadlineFinishBtn:disabled{opacity:.42!important;box-shadow:none!important}
+@media(max-width:720px){
+  #deadlineOverlay{align-items:flex-start!important;padding:10px!important}
+  #deadlineOverlay .deadline-modal{width:100%!important;padding:18px 15px 16px!important;border-radius:22px!important}
+  #deadlineOverlay .quest-head h2{font-size:23px!important}
+  #deadlineOverlay .deadline-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  #deadlineOverlay .deadline-card{min-height:96px!important;padding:10px 11px!important}
+  #deadlineOverlay .deadline-card b{font-size:14px!important}
+  #deadlineOverlay .deadline-card small{font-size:11.5px!important}
+}
+</style>
+
+
+<style id="v48-sort-hidden-fix">
+#sortOverlay #sortBoard[hidden],
+#sortOverlay .sort-partner[hidden],
+#sortOverlay .sort-intro[hidden],
+#sortOverlay .sort-helper[hidden],
+#sortOverlay #sortActions[hidden],
+#sortOverlay #sortResult[hidden]{display:none!important}
+#sortOverlay #sortResult:not([hidden]){display:block!important}
+</style>
+
+<style id="v49-sort-click-safety">
+#sortOverlay .sort-modal{pointer-events:auto!important}
+#sortOverlay #sortActions{position:relative!important;z-index:50!important;pointer-events:auto!important}
+#sortOverlay #submitSort,#sortOverlay #gamefulSkillBtn{position:relative!important;z-index:60!important;pointer-events:auto!important;touch-action:manipulation!important;cursor:pointer!important}
+#sortOverlay #submitSort:disabled{opacity:.7!important;cursor:default!important}
+#sortOverlay #sortResult{position:relative!important;z-index:40!important}
+</style>
+
+<script id="v53-mobile-runtime-fix">
+(function(){
+  const mq=window.matchMedia('(max-width:700px)');
+  function syncMobileClass(){document.documentElement.classList.toggle('mobile-ui',mq.matches);}
+  syncMobileClass();
+  if(mq.addEventListener)mq.addEventListener('change',syncMobileClass);else mq.addListener(syncMobileClass);
+  const vv=window.visualViewport;
+  function syncVH(){document.documentElement.style.setProperty('--mobile-vh',((vv&&vv.height)||window.innerHeight)+'px');}
+  syncVH(); window.addEventListener('resize',syncVH,{passive:true}); if(vv)vv.addEventListener('resize',syncVH,{passive:true});
+
+  /* Always bring newly opened dialogs to their top edge on phones. */
+  const obs=new MutationObserver(records=>{for(const r of records){const el=r.target;if(mq.matches&&el.classList&&el.classList.contains('overlay')&&el.classList.contains('show')){requestAnimationFrame(()=>{try{el.scrollTop=0}catch(_){}});}}});
+  document.querySelectorAll('.overlay').forEach(el=>obs.observe(el,{attributes:true,attributeFilter:['class']}));
+
+  const left=document.getElementById('mobileLeft'), right=document.getElementById('mobileRight'), jumpBtn=document.getElementById('mobileJump');
+  let holdTimer=null;
+  function step(dir){try{setTarget(player.x+dir*105)}catch(_){}}
+  function startHold(dir,e){if(e){e.preventDefault();e.stopPropagation()}step(dir);clearInterval(holdTimer);holdTimer=setInterval(()=>step(dir),135)}
+  function stopHold(e){if(e){e.preventDefault();e.stopPropagation()}clearInterval(holdTimer);holdTimer=null}
+  [left,right].forEach((btn,i)=>{if(!btn)return;const dir=i===0?-1:1;btn.addEventListener('pointerdown',e=>startHold(dir,e));btn.addEventListener('pointerup',stopHold);btn.addEventListener('pointercancel',stopHold);btn.addEventListener('pointerleave',stopHold);btn.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();step(dir)});});
+  if(jumpBtn)jumpBtn.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();try{jump()}catch(_){}});
+
+  /* Mobile taps should feel immediate everywhere. */
+  document.querySelectorAll('button').forEach(b=>{b.style.touchAction='manipulation'});
+})();
+</script>
+
+</body></html>
